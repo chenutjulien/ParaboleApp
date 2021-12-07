@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ParaboleApp.ChapBible.GeneseChap09">
+    <ContentPage.Content>
+        <ScrollView>
+            <Grid>
+                <Grid.Background>
+                    <RadialGradientBrush >
+                        <GradientStop Color="#076585" Offset="0.1"/>
+                        <GradientStop Color="#fff" Offset="1"/>
+                    </RadialGradientBrush>
+                </Grid.Background>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="80"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="50"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="0.5*"/>
+                    <ColumnDefinition Width="0.5*"/>
+                </Grid.ColumnDefinitions>
+                <Label Text="Genèse Chapitre 09"
+                       HorizontalOptions="CenterAndExpand"
+                       VerticalTextAlignment="Start"
+                       TextColor="Black"
+                       FontFamily="KleeOne"
+                       Margin="10"
+                       Padding="10"
+                       Grid.ColumnSpan="2"
+                       Grid.Row="0"
+                       FontSize="Large"
+                       FontAttributes="Bold"/>
+                <Label Margin="5"
+                       Padding="5"
+                       Grid.ColumnSpan="2"
+                       Grid.Row="1"
+                       TextColor="Black"
+                       FontFamily="KleeOne"
+                       VerticalTextAlignment="Center"
+                       FontSize="Medium"
+                       Text=" 9.1
+     Dieu bénit Noé et ses fils, et leur dit: Soyez féconds, multipliez, et remplissez la terre.&#10;
+9.2
+     Vous serez un sujet de crainte et d'effroi pour tout animal de la terre, pour tout oiseau du ciel, pour tout ce qui se meut sur la terre, et pour tous les poissons de la mer: ils sont livrés entre vos mains.&#10; 
+9.3
+     Tout ce qui se meut et qui a vie vous servira de nourriture: je vous donne tout cela comme l'herbe verte.&#10;
+9.4
+     Seulement, vous ne mangerez point de chair avec son âme, avec son sang.&#10;
+9.5
+     Sachez-le aussi, je redemanderai le sang de vos âmes, je le redemanderai à tout animal; et je redemanderai l'âme de l'homme à l'homme, à l'homme qui est son frère.&#10;
+9.6
+     Si quelqu'un verse le sang de l'homme, par l'homme son sang sera versé; car Dieu a fait l'homme à son image.&#10;
+9.7
+     Et vous, soyez féconds et multipliez, répandez-vous sur la terre et multipliez sur elle.&#10;
+9.8
+     Dieu parla encore à Noé et à ses fils avec lui, en disant:&#10;
+9.9
+     Voici, j'établis mon alliance avec vous et avec votre postérité après vous;&#10;
+9.10
+     avec tous les êtres vivants qui sont avec vous, tant les oiseaux que le bétail et tous les animaux de la terre, soit avec tous ceux qui sont sortis de l'arche, soit avec tous les animaux de la terre.&#10;
+9.11
+     J'établis mon alliance avec vous: aucune chair ne sera plus exterminée par les eaux du déluge, et il n'y aura plus de déluge pour détruire la terre.&#10;
+9.12
+     Et Dieu dit: C'est ici le signe de l'alliance que j'établis entre moi et vous, et tous les êtres vivants qui sont avec vous, pour les générations à toujours:&#10;
+9.13
+     j'ai placé mon arc dans la nue, et il servira de signe d'alliance entre moi et la terre.&#10;
+9.14
+     Quand j'aurai rassemblé des nuages au-dessus de la terre, l'arc paraîtra dans la nue;&#10;
+9.15
+     et je me souviendrai de mon alliance entre moi et vous, et tous les êtres vivants, de toute chair, et les eaux ne deviendront plus un déluge pour détruire toute chair.&#10;
+9.16
+     L'arc sera dans la nue; et je le regarderai, pour me souvenir de l'alliance perpétuelle entre Dieu et tous les êtres vivants, de toute chair qui est sur la terre.&#10;
+9.17
+     Et Dieu dit à Noé: Tel est le signe de l'alliance que j'établis entre moi et toute chair qui est sur la terre.&#10;
+9.18
+     Les fils de Noé, qui sortirent de l'arche, étaient Sem, Cham et Japhet. Cham fut le père de Canaan.&#10;
+9.19
+     Ce sont là les trois fils de Noé, et c'est leur postérité qui peupla toute la terre.&#10;
+9.20
+     Noé commença à cultiver la terre, et planta de la vigne.&#10;
+9.21
+     Il but du vin, s'enivra, et se découvrit au milieu de sa tente.&#10;
+9.22
+     Cham, père de Canaan, vit la nudité de son père, et il le rapporta dehors à ses deux frères.&#10;
+9.23
+     Alors Sem et Japhet prirent le manteau, le mirent sur leurs épaules, marchèrent à reculons, et couvrirent la nudité de leur père; comme leur visage était détourné, ils ne virent point la nudité de leur père.&#10;
+9.24
+     Lorsque Noé se réveilla de son vin, il apprit ce que lui avait fait son fils cadet.&#10;
+9.25
+     Et il dit: Maudit soit Canaan! qu'il soit l'esclave des esclaves de ses frères!&#10;
+9.26
+     Il dit encore: Béni soit l'Éternel, Dieu de Sem, et que Canaan soit leur esclave!&#10;
+9.27
+     Que Dieu étende les possessions de Japhet, qu'il habite dans les tentes de Sem, et que Canaan soit leur esclave!&#10;
+9.28
+     Noé vécut, après le déluge, trois cent cinquante ans.&#10;
+9.29
+     Tous les jours de Noé furent de neuf cent cinquante ans; puis il mourut."/>
+                <Button Text="Suivant"
+                        x:Name="Suivant"
+                        Grid.Column="1"
+                        Grid.Row="2"
+                        Margin="5"
+                        Padding="5"
+                        CornerRadius="10"
+                        Clicked="SuivantClicked"
+                        ImageSource="jouer.png"
+                        ContentLayout="right">
+                    <Button.Background>
+                        <LinearGradientBrush EndPoint="1,0">
+                            <GradientStop Color="#3a7bd5" Offset="0.1" />
+                            <GradientStop Color="#3a6073" Offset="1.0" />
+                        </LinearGradientBrush>
+                    </Button.Background>
+                </Button>
+                <Button Text="Précédent"
+                        x:Name="Précédent"
+                        Grid.Column="0"
+                        Grid.Row="2"
+                        Margin="5"
+                        Padding="5"
+                        CornerRadius="10"
+                        Clicked="PrecedentClicked"
+                        ImageSource="arriere.png">
+                    <Button.Background>
+                        <LinearGradientBrush EndPoint="1,0">
+                            <GradientStop Color="#3a7bd5" Offset="0.1" />
+                            <GradientStop Color="#3a6073" Offset="1.0" />
+                        </LinearGradientBrush>
+                    </Button.Background>
+                </Button>
+            </Grid>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

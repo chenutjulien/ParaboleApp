@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ParaboleApp.App">
+    <!--
+        Define global resources and styles here, that apply to all pages in your app.
+    -->
+    <Application.Resources>
+        
+        <Thickness x:Key="PageMargin">20</Thickness>
+
+        <!-- Colors tab bar-->
+        <Color x:Key="AppPrimaryColor">DarkKhaki</Color>
+        <!--Couleur background par defaut des pages-->
+        <Color x:Key="AppBackgroundColor">white</Color>
+        <!--Couleur ??-->
+        <Color x:Key="PrimaryColor">red</Color>
+        <!--Couleur icone selectionnée-->
+        <Color x:Key="SecondaryColor">DarkSlateGray</Color>
+        <!--Couleur ??-->
+        <Color x:Key="TertiaryColor">red</Color>
+
+        <!-- Implicit styles -->
+        <Style TargetType="ContentPage" ApplyToDerivedTypes="True">
+            <Setter Property="BackgroundColor" Value="{StaticResource AppBackgroundColor}" />            
+        </Style>
+
+        <Style TargetType="Button">
+            <Setter Property="FontSize"
+                    Value="Medium" />
+            <Setter Property="BackgroundColor"
+                    Value="{StaticResource AppPrimaryColor}" />
+            <Setter Property="TextColor"
+                    Value="{StaticResource SecondaryColor}" />
+            <Setter Property="CornerRadius"
+                    Value="5" />
+        </Style>
+        
+        
+        
+    </Application.Resources>
+</Application>

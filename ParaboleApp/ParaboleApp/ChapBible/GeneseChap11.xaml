@@ -1,0 +1,142 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ParaboleApp.ChapBible.GeneseChap11">
+    <ContentPage.Content>
+        <ScrollView>
+            <Grid>
+                <Grid.Background>
+                    <RadialGradientBrush >
+                        <GradientStop Color="#076585" Offset="0.1"/>
+                        <GradientStop Color="#fff" Offset="1"/>
+                    </RadialGradientBrush>
+                </Grid.Background>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="80"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="50"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="0.5*"/>
+                    <ColumnDefinition Width="0.5*"/>
+                </Grid.ColumnDefinitions>
+                <Label Text="Genèse Chapitre 11"
+                       HorizontalOptions="CenterAndExpand"
+                       VerticalTextAlignment="Start"
+                       TextColor="Black"
+                       FontFamily="KleeOne"
+                       Margin="10"
+                       Padding="10"
+                       Grid.ColumnSpan="2"
+                       Grid.Row="0"
+                       FontSize="Large"
+                       FontAttributes="Bold"/>
+                <Label Margin="5"
+                       Padding="5"
+                       Grid.ColumnSpan="2"
+                       Grid.Row="1"
+                       TextColor="Black"
+                       FontFamily="KleeOne"
+                       VerticalTextAlignment="Center"
+                       FontSize="Medium"
+                       Text=" 11.1
+     Toute la terre avait une seule langue et les mêmes mots.&#10;
+11.2
+     Comme ils étaient partis de l'orient, ils trouvèrent une plaine au pays de Schinear, et ils y habitèrent.&#10;
+11.3
+     Ils se dirent l'un à l'autre: Allons! faisons des briques, et cuisons-les au feu. Et la brique leur servit de pierre, et le bitume leur servit de ciment.&#10;
+11.4
+     Ils dirent encore: Allons! bâtissons-nous une ville et une tour dont le sommet touche au ciel, et faisons-nous un nom, afin que nous ne soyons pas dispersés sur la face de toute la terre.&#10;
+11.5
+     L'Éternel descendit pour voir la ville et la tour que bâtissaient les fils des hommes.&#10;
+11.6
+     Et l'Éternel dit: Voici, ils forment un seul peuple et ont tous une même langue, et c'est là ce qu'ils ont entrepris; maintenant rien ne les empêcherait de faire tout ce qu'ils auraient projeté.&#10;
+11.7
+     Allons! descendons, et là confondons leur langage, afin qu'ils n'entendent plus la langue, les uns des autres.&#10;
+11.8
+     Et l'Éternel les dispersa loin de là sur la face de toute la terre; et ils cessèrent de bâtir la ville.&#10;
+11.9
+     C'est pourquoi on l'appela du nom de Babel, car c'est là que l'Éternel confondit le langage de toute la terre, et c'est de là que l'Éternel les dispersa sur la face de toute la terre.&#10;
+11.10
+     Voici la postérité de Sem. Sem, âgé de cent ans, engendra Arpacschad, deux ans après le déluge.&#10;
+11.11
+     Sem vécut, après la naissance d'Arpacschad, cinq cents ans; et il engendra des fils et des filles.&#10;
+11.12
+     Arpacschad, âgé de trente-cinq ans, engendra Schélach.&#10;
+11.13
+     Arpacschad vécut, après la naissance de Schélach, quatre cent trois ans; et il engendra des fils et des filles.&#10;
+11.14
+     Schélach, âgé de trente ans, engendra Héber.&#10;
+11.15
+     Schélach vécut, après la naissance d'Héber, quatre cent trois ans; et il engendra des fils et des filles.&#10;
+11.16
+     Héber, âgé de trente-quatre ans, engendra Péleg.&#10;
+11.17
+     Héber vécut, après la naissance de Péleg, quatre cent trente ans; et il engendra des fils et des filles.&#10;
+11.18
+     Péleg, âgé de trente ans, engendra Rehu.&#10;
+11.19
+     Péleg vécut, après la naissance de Rehu, deux cent neuf ans; et il engendra des fils et des filles.&#10;
+11.20
+     Rehu, âgé de trente-deux ans, engendra Serug.&#10;
+11.21
+     Rehu vécut, après la naissance de Serug, deux cent sept ans; et il engendra des fils et des filles.&#10;
+11.22
+     Serug, âgé de trente ans, engendra Nachor.&#10;
+11.23
+     Serug vécut, après la naissance de Nachor, deux cents ans; et il engendra des fils et des filles.&#10;
+11.24
+     Nachor, âgé de vingt-neuf ans, engendra Térach.&#10;
+11.25
+     Nachor vécut, après la naissance de Térach, cent dix-neuf ans; et il engendra des fils et des filles.&#10;
+11.26
+     Térach, âgé de soixante-dix ans, engendra Abram, Nachor et Haran.&#10;
+11.27
+     Voici la postérité de Térach. Térach engendra Abram, Nachor et Haran. -Haran engendra Lot.&#10;
+11.28
+     Et Haran mourut en présence de Térach, son père, au pays de sa naissance, à Ur en Chaldée. -&#10;
+11.29
+     Abram et Nachor prirent des femmes: le nom de la femme d'Abram était Saraï, et le nom de la femme de Nachor était Milca, fille d'Haran, père de Milca et père de Jisca.&#10;
+11.30
+     Saraï était stérile: elle n'avait point d'enfants.&#10;
+11.31
+     Térach prit Abram, son fils, et Lot, fils d'Haran, fils de son fils, et Saraï, sa belle-fille, femme d'Abram, son fils. Ils sortirent ensemble d'Ur en Chaldée, pour aller au pays de Canaan. Ils vinrent jusqu'à Charan, et ils y habitèrent.&#10;
+11.32
+     Les jours de Térach furent de deux cent cinq ans; et Térach mourut à Charan."/>
+                <Button Text="Suivant"
+                        x:Name="Suivant"
+                        Grid.Column="1"
+                        Grid.Row="2"
+                        Margin="5"
+                        Padding="5"
+                        CornerRadius="10"
+                        Clicked="SuivantClicked"
+                        ImageSource="jouer.png"
+                        ContentLayout="right">
+                    <Button.Background>
+                        <LinearGradientBrush EndPoint="1,0">
+                            <GradientStop Color="#3a7bd5" Offset="0.1" />
+                            <GradientStop Color="#3a6073" Offset="1.0" />
+                        </LinearGradientBrush>
+                    </Button.Background>
+                </Button>
+                <Button Text="Précédent"
+                        x:Name="Précédent"
+                        Grid.Column="0"
+                        Grid.Row="2"
+                        Margin="5"
+                        Padding="5"
+                        CornerRadius="10"
+                        Clicked="PrecedentClicked"
+                        ImageSource="arriere.png">
+                    <Button.Background>
+                        <LinearGradientBrush EndPoint="1,0">
+                            <GradientStop Color="#3a7bd5" Offset="0.1" />
+                            <GradientStop Color="#3a6073" Offset="1.0" />
+                        </LinearGradientBrush>
+                    </Button.Background>
+                </Button>
+            </Grid>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

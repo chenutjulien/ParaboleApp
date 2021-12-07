@@ -1,0 +1,683 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ParaboleApp.Views.Bible">
+    <ScrollView>
+        <Grid Margin="15"
+              RowSpacing="15"
+              ColumnSpacing="15">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="0.5*"/>
+                <ColumnDefinition Width="0.5*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="45"/>
+                <RowDefinition Height="45"/>
+                <RowDefinition Height="45"/>
+                <RowDefinition Height="45"/>
+                <RowDefinition Height="45"/>
+                <RowDefinition Height="45"/>
+                <RowDefinition Height="45"/>
+                <RowDefinition Height="45"/>
+                <RowDefinition Height="45"/>
+                <RowDefinition Height="45"/>
+                <RowDefinition Height="45"/>
+                <RowDefinition Height="45"/>
+                <RowDefinition Height="45"/>
+                <RowDefinition Height="45"/>
+                <RowDefinition Height="45"/>
+                <RowDefinition Height="45"/>
+                <RowDefinition Height="45"/>
+                <RowDefinition Height="45"/>
+                <RowDefinition Height="45"/>
+                <RowDefinition Height="45"/>
+                <RowDefinition Height="45"/>
+                <RowDefinition Height="45"/>
+                <RowDefinition Height="45"/>
+                <RowDefinition Height="45"/>
+                <RowDefinition Height="45"/>
+                <RowDefinition Height="45"/>
+                <RowDefinition Height="45"/>
+                <RowDefinition Height="45"/>
+                <RowDefinition Height="45"/>
+                <RowDefinition Height="45"/>
+            </Grid.RowDefinitions>
+            <Label Text="Ancien Testament"
+                   FontSize="Medium"
+                   Grid.ColumnSpan="2"
+                   Grid.Row="0"
+                   TextColor="Black"/>
+            <Button Text="Genese"
+                x:Name="Genese"
+                Clicked="GeneseClicked"
+                HorizontalOptions="FillAndExpand"
+                FontFamily="KleeOne-SemiBold"
+                FontSize="Medium"
+                FontAttributes="Bold"
+                ImageSource="ParoleIcon.png"
+                Grid.Column="0"
+                Grid.Row="0">
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="1,0">
+                        <GradientStop Color="PaleTurquoise" Offset="0.1" />
+                        <GradientStop Color="SteelBlue" Offset="1.0" />
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+            <Button Text="Exode"
+                x:Name="Exode"
+                FontFamily="KleeOne-SemiBold"
+                FontSize="Medium"
+                FontAttributes="Bold"
+                ImageSource="ParoleIcon.png"
+                HorizontalOptions="FillAndExpand"
+                Grid.Column="1"
+                Grid.Row="0">
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="1,0">
+                        <GradientStop Color="Wheat" Offset="0.1" />
+                        <GradientStop Color="Salmon" Offset="1.0" />
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+            <Button Text="Levitique"
+                x:Name="Levitique"
+                HorizontalOptions="FillAndExpand"
+                FontFamily="KleeOne-SemiBold"
+                FontSize="Medium"
+                FontAttributes="Bold"
+                ImageSource="ParoleIcon.png"
+                Grid.Column="0"
+                Grid.Row="1">
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="1,0">
+                        <GradientStop Color="MediumOrchid" Offset="0.1" />
+                        <GradientStop Color="MediumSlateBlue" Offset="1.0" />
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+            <Button Text="Nombres"
+                x:Name="Nombres"
+                HorizontalOptions="FillAndExpand"
+                FontFamily="KleeOne-SemiBold"
+                FontSize="Medium"
+                FontAttributes="Bold"
+                ImageSource="ParoleIcon.png"
+                Grid.Column="1"
+                Grid.Row="1">
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="1,0">
+                        <GradientStop Color="LightPink" Offset="0.1" />
+                        <GradientStop Color="DeepPink" Offset="1.0" />
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+            <Button Text="Deutéronome"
+                x:Name="Deuteronome"
+                HorizontalOptions="FillAndExpand"
+                FontFamily="KleeOne-SemiBold"
+                FontSize="Medium"
+                FontAttributes="Bold"
+                ImageSource="ParoleIcon.png"
+                Grid.Column="0"
+                Grid.Row="2">
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="1,0">
+                        <GradientStop Color="LemonChiffon" Offset="0.1" />
+                        <GradientStop Color="Gold" Offset="1.0" />
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+            <Button Text="Josué"
+                x:Name="Josue"
+                HorizontalOptions="FillAndExpand"
+                FontFamily="KleeOne-SemiBold"
+                FontSize="Medium"
+                FontAttributes="Bold"
+                ImageSource="ParoleIcon.png"
+                Grid.Column="1"
+                Grid.Row="2">
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="1,0">
+                        <GradientStop Color="LawnGreen" Offset="0.1" />
+                        <GradientStop Color="LimeGreen" Offset="1.0" />
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+            <Button Text="Juges"
+                x:Name="Juges"
+                HorizontalOptions="FillAndExpand"
+                FontFamily="KleeOne-SemiBold"
+                FontSize="Medium"
+                FontAttributes="Bold"
+                ImageSource="ParoleIcon.png"
+                Grid.Column="0"
+                Grid.Row="3">
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="1,0">
+                        <GradientStop Color="LemonChiffon" Offset="0.1" />
+                        <GradientStop Color="Gold" Offset="1.0" />
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+            <Button Text="Ruth"
+                x:Name="Ruth"
+                HorizontalOptions="FillAndExpand"
+                FontFamily="KleeOne-SemiBold"
+                FontSize="Medium"
+                FontAttributes="Bold"
+                ImageSource="ParoleIcon.png"
+                Grid.Column="1"
+                Grid.Row="3">
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="1,0">
+                        <GradientStop Color="LawnGreen" Offset="0.1" />
+                        <GradientStop Color="LimeGreen" Offset="1.0" />
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+            <Button Text="1 Samuel"
+                x:Name="Samuel1"
+                HorizontalOptions="FillAndExpand"
+                FontFamily="KleeOne-SemiBold"
+                FontSize="Medium"
+                FontAttributes="Bold"
+                ImageSource="ParoleIcon.png"
+                Grid.Column="0"
+                Grid.Row="4">
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="1,0">
+                        <GradientStop Color="PaleTurquoise" Offset="0.1" />
+                        <GradientStop Color="SteelBlue" Offset="1.0" />
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+            <Button Text="2 Samuel"
+                x:Name="Samuel2"
+                FontFamily="KleeOne-SemiBold"
+                FontSize="Medium"
+                FontAttributes="Bold"
+                ImageSource="ParoleIcon.png"
+                HorizontalOptions="FillAndExpand"
+                Grid.Column="1"
+                Grid.Row="4">
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="1,0">
+                        <GradientStop Color="Wheat" Offset="0.1" />
+                        <GradientStop Color="Salmon" Offset="1.0" />
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+            <Button Text="1 Rois"
+                x:Name="Rois1"
+                HorizontalOptions="FillAndExpand"
+                FontFamily="KleeOne-SemiBold"
+                FontSize="Medium"
+                FontAttributes="Bold"
+                ImageSource="ParoleIcon.png"
+                Grid.Column="0"
+                Grid.Row="5">
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="1,0">
+                        <GradientStop Color="PaleTurquoise" Offset="0.1" />
+                        <GradientStop Color="SteelBlue" Offset="1.0" />
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+            <Button Text="2 Rois"
+                x:Name="Rois2"
+                FontFamily="KleeOne-SemiBold"
+                FontSize="Medium"
+                FontAttributes="Bold"
+                ImageSource="ParoleIcon.png"
+                HorizontalOptions="FillAndExpand"
+                Grid.Column="1"
+                Grid.Row="5">
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="1,0">
+                        <GradientStop Color="Wheat" Offset="0.1" />
+                        <GradientStop Color="Salmon" Offset="1.0" />
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+            <Button Text="1Chroniques"
+                x:Name="Chroniques1"
+                HorizontalOptions="FillAndExpand"
+                FontFamily="KleeOne-SemiBold"
+                FontSize="Medium"
+                FontAttributes="Bold"
+                ImageSource="ParoleIcon.png"
+                Grid.Column="0"
+                Grid.Row="6">
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="1,0">
+                        <GradientStop Color="PaleTurquoise" Offset="0.1" />
+                        <GradientStop Color="SteelBlue" Offset="1.0" />
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+            <Button Text="2Chroniques"
+                x:Name="Chroniques2"
+                FontFamily="KleeOne-SemiBold"
+                FontSize="Medium"
+                FontAttributes="Bold"
+                ImageSource="ParoleIcon.png"
+                HorizontalOptions="FillAndExpand"
+                Grid.Column="1"
+                Grid.Row="6">
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="1,0">
+                        <GradientStop Color="Wheat" Offset="0.1" />
+                        <GradientStop Color="Salmon" Offset="1.0" />
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+            <Button Text="Esdras"
+                x:Name="Esdras"
+                HorizontalOptions="FillAndExpand"
+                FontFamily="KleeOne-SemiBold"
+                FontSize="Medium"
+                FontAttributes="Bold"
+                ImageSource="ParoleIcon.png"
+                Grid.Column="0"
+                Grid.Row="7">
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="1,0">
+                        <GradientStop Color="PaleTurquoise" Offset="0.1" />
+                        <GradientStop Color="SteelBlue" Offset="1.0" />
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+            <Button Text="Néhémie"
+                x:Name="Nehemie"
+                FontFamily="KleeOne-SemiBold"
+                FontSize="Medium"
+                FontAttributes="Bold"
+                ImageSource="ParoleIcon.png"
+                HorizontalOptions="FillAndExpand"
+                Grid.Column="1"
+                Grid.Row="7">
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="1,0">
+                        <GradientStop Color="Wheat" Offset="0.1" />
+                        <GradientStop Color="Salmon" Offset="1.0" />
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+            <Button Text="Esther"
+                x:Name="Esther"
+                HorizontalOptions="FillAndExpand"
+                FontFamily="KleeOne-SemiBold"
+                FontSize="Medium"
+                FontAttributes="Bold"
+                ImageSource="ParoleIcon.png"
+                Grid.Column="0"
+                Grid.Row="8">
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="1,0">
+                        <GradientStop Color="PaleTurquoise" Offset="0.1" />
+                        <GradientStop Color="SteelBlue" Offset="1.0" />
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+            <Button Text="Job"
+                x:Name="Job"
+                FontFamily="KleeOne-SemiBold"
+                FontSize="Medium"
+                FontAttributes="Bold"
+                ImageSource="ParoleIcon.png"
+                HorizontalOptions="FillAndExpand"
+                Grid.Column="1"
+                Grid.Row="8">
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="1,0">
+                        <GradientStop Color="Wheat" Offset="0.1" />
+                        <GradientStop Color="Salmon" Offset="1.0" />
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+            <Button Text="Psaumes"
+                x:Name="Psaumes"
+                HorizontalOptions="FillAndExpand"
+                FontFamily="KleeOne-SemiBold"
+                FontSize="Medium"
+                FontAttributes="Bold"
+                ImageSource="ParoleIcon.png"
+                Grid.Column="0"
+                Grid.Row="9">
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="1,0">
+                        <GradientStop Color="PaleTurquoise" Offset="0.1" />
+                        <GradientStop Color="SteelBlue" Offset="1.0" />
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+            <Button Text="Proverbes"
+                x:Name="Proverbes"
+                FontFamily="KleeOne-SemiBold"
+                FontSize="Medium"
+                FontAttributes="Bold"
+                ImageSource="ParoleIcon.png"
+                HorizontalOptions="FillAndExpand"
+                Grid.Column="1"
+                Grid.Row="9">
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="1,0">
+                        <GradientStop Color="Wheat" Offset="0.1" />
+                        <GradientStop Color="Salmon" Offset="1.0" />
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+            <Button Text="Ecclésiaste"
+                x:Name="Ecclesiaste"
+                HorizontalOptions="FillAndExpand"
+                FontFamily="KleeOne-SemiBold"
+                FontSize="Medium"
+                FontAttributes="Bold"
+                ImageSource="ParoleIcon.png"
+                Grid.Column="0"
+                Grid.Row="10">
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="1,0">
+                        <GradientStop Color="PaleTurquoise" Offset="0.1" />
+                        <GradientStop Color="SteelBlue" Offset="1.0" />
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+            <Button Text="Cantique des Cantiques"
+                x:Name="CantiqueDesCantiques"
+                FontFamily="KleeOne-SemiBold"
+                FontSize="Medium"
+                FontAttributes="Bold"
+                ImageSource="ParoleIcon.png"
+                HorizontalOptions="FillAndExpand"
+                Grid.Column="1"
+                Grid.Row="10">
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="1,0">
+                        <GradientStop Color="Wheat" Offset="0.1" />
+                        <GradientStop Color="Salmon" Offset="1.0" />
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+            <Button Text="Esaïe"
+                x:Name="Esaie"
+                HorizontalOptions="FillAndExpand"
+                FontFamily="KleeOne-SemiBold"
+                FontSize="Medium"
+                FontAttributes="Bold"
+                ImageSource="ParoleIcon.png"
+                Grid.Column="0"
+                Grid.Row="11">
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="1,0">
+                        <GradientStop Color="PaleTurquoise" Offset="0.1" />
+                        <GradientStop Color="SteelBlue" Offset="1.0" />
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+            <Button Text="Jérémie"
+                x:Name="Jeremie"
+                FontFamily="KleeOne-SemiBold"
+                FontSize="Medium"
+                FontAttributes="Bold"
+                ImageSource="ParoleIcon.png"
+                HorizontalOptions="FillAndExpand"
+                Grid.Column="1"
+                Grid.Row="11">
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="1,0">
+                        <GradientStop Color="Wheat" Offset="0.1" />
+                        <GradientStop Color="Salmon" Offset="1.0" />
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+            <Button Text="Lamentations de Jérémie"
+                x:Name="LamentationsDeJeremie"
+                HorizontalOptions="FillAndExpand"
+                FontFamily="KleeOne-SemiBold"
+                FontSize="Medium"
+                FontAttributes="Bold"
+                ImageSource="ParoleIcon.png"
+                Grid.Column="0"
+                Grid.Row="12">
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="1,0">
+                        <GradientStop Color="PaleTurquoise" Offset="0.1" />
+                        <GradientStop Color="SteelBlue" Offset="1.0" />
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+            <Button Text="Ezéchiel"
+                x:Name="Ezechiel"
+                FontFamily="KleeOne-SemiBold"
+                FontSize="Medium"
+                FontAttributes="Bold"
+                ImageSource="ParoleIcon.png"
+                HorizontalOptions="FillAndExpand"
+                Grid.Column="1"
+                Grid.Row="12">
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="1,0">
+                        <GradientStop Color="Wheat" Offset="0.1" />
+                        <GradientStop Color="Salmon" Offset="1.0" />
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+            <Button Text="Daniel"
+                x:Name="Daniel"
+                HorizontalOptions="FillAndExpand"
+                FontFamily="KleeOne-SemiBold"
+                FontSize="Medium"
+                FontAttributes="Bold"
+                ImageSource="ParoleIcon.png"
+                Grid.Column="0"
+                Grid.Row="13">
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="1,0">
+                        <GradientStop Color="PaleTurquoise" Offset="0.1" />
+                        <GradientStop Color="SteelBlue" Offset="1.0" />
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+            <Button Text="Osée"
+                x:Name="Osee"
+                FontFamily="KleeOne-SemiBold"
+                FontSize="Medium"
+                FontAttributes="Bold"
+                ImageSource="ParoleIcon.png"
+                HorizontalOptions="FillAndExpand"
+                Grid.Column="1"
+                Grid.Row="13">
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="1,0">
+                        <GradientStop Color="Wheat" Offset="0.1" />
+                        <GradientStop Color="Salmon" Offset="1.0" />
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+            <Button Text="Joël"
+                x:Name="Joel"
+                HorizontalOptions="FillAndExpand"
+                FontFamily="KleeOne-SemiBold"
+                FontSize="Medium"
+                FontAttributes="Bold"
+                ImageSource="ParoleIcon.png"
+                Grid.Column="0"
+                Grid.Row="14">
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="1,0">
+                        <GradientStop Color="PaleTurquoise" Offset="0.1" />
+                        <GradientStop Color="SteelBlue" Offset="1.0" />
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+            <Button Text="Amos"
+                x:Name="Amos"
+                FontFamily="KleeOne-SemiBold"
+                FontSize="Medium"
+                FontAttributes="Bold"
+                ImageSource="ParoleIcon.png"
+                HorizontalOptions="FillAndExpand"
+                Grid.Column="1"
+                Grid.Row="14">
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="1,0">
+                        <GradientStop Color="Wheat" Offset="0.1" />
+                        <GradientStop Color="Salmon" Offset="1.0" />
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+            <Button Text="Abdias"
+                x:Name="Abdias"
+                HorizontalOptions="FillAndExpand"
+                FontFamily="KleeOne-SemiBold"
+                FontSize="Medium"
+                FontAttributes="Bold"
+                ImageSource="ParoleIcon.png"
+                Grid.Column="0"
+                Grid.Row="15">
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="1,0">
+                        <GradientStop Color="PaleTurquoise" Offset="0.1" />
+                        <GradientStop Color="SteelBlue" Offset="1.0" />
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+            <Button Text="Jonas"
+                x:Name="Jonas"
+                FontFamily="KleeOne-SemiBold"
+                FontSize="Medium"
+                FontAttributes="Bold"
+                ImageSource="ParoleIcon.png"
+                HorizontalOptions="FillAndExpand"
+                Grid.Column="1"
+                Grid.Row="15">
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="1,0">
+                        <GradientStop Color="Wheat" Offset="0.1" />
+                        <GradientStop Color="Salmon" Offset="1.0" />
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+            <Button Text="Michée"
+                x:Name="Michee"
+                HorizontalOptions="FillAndExpand"
+                FontFamily="KleeOne-SemiBold"
+                FontSize="Medium"
+                FontAttributes="Bold"
+                ImageSource="ParoleIcon.png"
+                Grid.Column="0"
+                Grid.Row="16">
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="1,0">
+                        <GradientStop Color="PaleTurquoise" Offset="0.1" />
+                        <GradientStop Color="SteelBlue" Offset="1.0" />
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+            <Button Text="Nahum"
+                x:Name="Nahum"
+                FontFamily="KleeOne-SemiBold"
+                FontSize="Medium"
+                FontAttributes="Bold"
+                ImageSource="ParoleIcon.png"
+                HorizontalOptions="FillAndExpand"
+                Grid.Column="1"
+                Grid.Row="16">
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="1,0">
+                        <GradientStop Color="Wheat" Offset="0.1" />
+                        <GradientStop Color="Salmon" Offset="1.0" />
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+            <Button Text="Habakuk"
+                x:Name="Habakuk"
+                HorizontalOptions="FillAndExpand"
+                FontFamily="KleeOne-SemiBold"
+                FontSize="Medium"
+                FontAttributes="Bold"
+                ImageSource="ParoleIcon.png"
+                Grid.Column="0"
+                Grid.Row="17">
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="1,0">
+                        <GradientStop Color="PaleTurquoise" Offset="0.1" />
+                        <GradientStop Color="SteelBlue" Offset="1.0" />
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+            <Button Text="Sophonie"
+                x:Name="Sophonie"
+                FontFamily="KleeOne-SemiBold"
+                FontSize="Medium"
+                FontAttributes="Bold"
+                ImageSource="ParoleIcon.png"
+                HorizontalOptions="FillAndExpand"
+                Grid.Column="1"
+                Grid.Row="17">
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="1,0">
+                        <GradientStop Color="Wheat" Offset="0.1" />
+                        <GradientStop Color="Salmon" Offset="1.0" />
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+            <Button Text="Aggée"
+                x:Name="Aggee"
+                HorizontalOptions="FillAndExpand"
+                FontFamily="KleeOne-SemiBold"
+                FontSize="Medium"
+                FontAttributes="Bold"
+                ImageSource="ParoleIcon.png"
+                Grid.Column="0"
+                Grid.Row="18">
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="1,0">
+                        <GradientStop Color="PaleTurquoise" Offset="0.1" />
+                        <GradientStop Color="SteelBlue" Offset="1.0" />
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+            <Button Text="Zacharie"
+                x:Name="Zacharie"
+                FontFamily="KleeOne-SemiBold"
+                FontSize="Medium"
+                FontAttributes="Bold"
+                ImageSource="ParoleIcon.png"
+                HorizontalOptions="FillAndExpand"
+                Grid.Column="1"
+                Grid.Row="18">
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="1,0">
+                        <GradientStop Color="Wheat" Offset="0.1" />
+                        <GradientStop Color="Salmon" Offset="1.0" />
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+            <Button Text="Malachie"
+                x:Name="Malachie"
+                FontFamily="KleeOne-SemiBold"
+                FontSize="Medium"
+                FontAttributes="Bold"
+                ImageSource="ParoleIcon.png"
+                HorizontalOptions="FillAndExpand"
+                Grid.Column="1"
+                Grid.Row="19">
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="1,0">
+                        <GradientStop Color="Wheat" Offset="0.1" />
+                        <GradientStop Color="Salmon" Offset="1.0" />
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+            <Label Text="Nouveau Testament"
+                   FontSize="Medium"
+                   Grid.ColumnSpan="2"
+                   Grid.Row="20"
+                   TextColor="Black"/>
+
+        </Grid>
+    </ScrollView>
+</ContentPage>

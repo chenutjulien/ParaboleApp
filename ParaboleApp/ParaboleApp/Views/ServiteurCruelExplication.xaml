@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ParaboleApp.Views.ServiteurCruelExplication">
+    <ScrollView>
+        <Grid Margin="20"
+              RowSpacing="10"
+              ColumnSpacing="10">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="60"/>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="800"/>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="150"/>
+                <RowDefinition Height="200"/>
+                <RowDefinition Height="10"/>
+            </Grid.RowDefinitions>
+            <!--Row 0-->
+            <Label Text="La parabole du serviteur cruel."
+                   FontFamily="KleeOne-SemiBold"
+                   Grid.Row="0"
+                   HorizontalTextAlignment="Center"
+                   FontSize="Large"
+                   VerticalOptions="CenterAndExpand" 
+                   HorizontalOptions="CenterAndExpand"
+                   FontAttributes="Bold"/>
+            <!--Row 1-->
+            <Label Text="Lecture des versets&#10;Mathieu 18, 23-35"
+                   FontFamily="KleeOne-SemiBold"
+                   Grid.Row="1"
+                   HorizontalTextAlignment="Center"
+                   FontSize="Medium"/>
+            <!--Row 2-->
+            <Label Text=" 23: C'est pourquoi, le royaume des cieux est semblable à un roi qui voulut faire rendre compte à ses serviteurs.&#10;
+24: Quand il se mit à compter, on lui en amena un qui devait dix mille talents.&#10;
+25: Comme il n'avait pas de quoi payer, son maître ordonna qu'il fût vendu, lui, sa femme, ses enfants, et tout ce qu'il avait, et que la dette fût acquittée.&#10;
+26: Le serviteur, se jetant à terre, se prosterna devant lui, et dit: Seigneur, aie patience envers moi, et je te paierai tout.&#10;
+27: Ému de compassion, le maître de ce serviteur le laissa aller, et lui remit la dette.&#10;
+28: Après qu'il fut sorti, ce serviteur rencontra un de ses compagnons qui lui devait cent deniers. Il le saisit et l'étranglait, en disant: Paie ce que tu me dois.&#10;
+29: Son compagnon, se jetant à terre, le suppliait, disant: Aie patience envers moi, et je te paierai.&#10;
+30: Mais l'autre ne voulut pas, et il alla le jeter en prison, jusqu'à ce qu'il eût payé ce qu'il devait.&#10;
+31: Ses compagnons, ayant vu ce qui était arrivé, furent profondément attristés, et ils allèrent raconter à leur maître tout ce qui s'était passé.&#10;
+32: Alors le maître fit appeler ce serviteur, et lui dit: Méchant serviteur, je t'avais remis en entier ta dette, parce que tu m'en avais supplié;&#10;
+33: ne devais-tu pas aussi avoir pitié de ton compagnon, comme j'ai eu pitié de toi?&#10;
+34: Et son maître, irrité, le livra aux bourreaux, jusqu'à ce qu'il eût payé tout ce qu'il devait.&#10;
+35: C'est ainsi que mon Père céleste vous traitera, si chacun de vous ne pardonne à son frère de tout son coeur.&#10;"
+                   FontFamily="KleeOne-SemiBold"
+                   Grid.Row="2"/>
+            <!--Row 3-->
+            <Label Text="Explicaton de la parabole"
+                   FontFamily="KleeOne-SemiBold"
+                   Grid.Row="3"
+                   HorizontalTextAlignment="Center"
+                   FontSize="Medium"/>
+            <!--Row 4-->
+            <Label Text="Cette parabole raconte la réaction d'un serviteur envers qui son Maître à fait preuve de clémence."
+                   FontFamily="KleeOne-SemiBold"
+                   Grid.Row="4"/>
+            <!--Row 5-->
+            <Label Text="ACTES 4:12&#10;Il n'y a de salut en aucun autre; car il n'y a sous le ciel aucun autre nom qui ait été donné parmi les hommes, par lequel nous devions être sauvés."
+                   Grid.Row="5"
+                   FontFamily="KleeOne-SemiBold"
+                   FontAttributes="Italic"
+                   HorizontalTextAlignment="Center"
+                   TextColor="DarkSlateGray"/>
+        </Grid>
+    </ScrollView>
+</ContentPage>

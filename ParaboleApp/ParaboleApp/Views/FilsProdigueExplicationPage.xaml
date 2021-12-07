@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ParaboleApp.Views.FilsProdigueExplicationPage">
+    <ScrollView>
+        <Grid Margin="20"
+              RowSpacing="10"
+              ColumnSpacing="10">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="60"/>
+                <!-- Row 00-->
+                <RowDefinition Height="50"/>
+                <!-- Row 01-->
+                <RowDefinition Height="1300"/>
+                <!-- Row 02-->
+                <RowDefinition Height="50"/>
+                <!-- Row 03-->
+                <RowDefinition Height="45"/>
+                <!-- Row 04-->
+                <RowDefinition Height="100"/>
+                <!-- Row 05-->
+                <RowDefinition Height="10"/>
+                <!-- Row 06-->
+            </Grid.RowDefinitions>
+            <!--Row 0-->
+            <Label Text="La parabole du fils prodigue."
+                   FontFamily="KleeOne-SemiBold"
+                   Grid.Row="0"
+                   HorizontalTextAlignment="Center"
+                   FontSize="Large"
+                   VerticalOptions="CenterAndExpand" 
+                   HorizontalOptions="CenterAndExpand"
+                   FontAttributes="Bold"/>
+            <!--Row 1-->
+            <Label Text="Lecture des versets&#10;Luc 15, 11-32"
+                   FontFamily="KleeOne-SemiBold"
+                   Grid.Row="1"
+                   HorizontalTextAlignment="Center"
+                   FontSize="Medium"/>
+            <!--Row 2-->
+            <Label Text=" 11:Il dit encore: Un homme avait deux fils.&#10;
+12:Le plus jeune dit à son père: Mon père, donne-moi la part de bien qui doit me revenir. Et le père leur partagea son bien.&#10;
+13:Peu de jours après, le plus jeune fils, ayant tout ramassé, partit pour un pays éloigné, où il dissipa son bien en vivant dans la débauche.&#10;
+14:Lorsqu'il eut tout dépensé, une grande famine survint dans ce pays, et il commença à se trouver dans le besoin.&#10;
+15:Il alla se mettre au service d'un des habitants du pays, qui l'envoya dans ses champs garder les pourceaux.&#10;
+16:Il aurait bien voulu se rassasier des carouges que mangeaient les pourceaux, mais personne ne lui en donnait.&#10;
+17:Etant rentré en lui-même, il se dit: Combien de mercenaires chez mon père ont du pain en abondance, et moi, ici, je meurs de faim ! &#10;
+18:Je me lèverai, j'irai vers mon père, et je lui dirai: Mon père, j'ai péché contre le ciel et contre toi,&#10;
+19:je ne suis plus digne d'être appelé ton fils; traite-moi comme l'un de tes mercenaires.&#10;
+20:Et il se leva, et alla vers son père. Comme il était encore loin, son père le vit et fut ému de compassion, il courut se jeter à son cou et le baisa.&#10;
+21:Le fils lui dit: Mon père, j'ai péché contre le ciel et contre toi, je ne suis plus digne d'être appelé ton fils.&#10;
+22:Mais le père dit à ses serviteurs: Apportez vite la plus belle robe, et l'en revêtez; mettez-lui un anneau au doigt, et des souliers aux pieds.&#10;
+23:Amenez le veau gras, et tuez-le. Mangeons et réjouissons-nous;&#10;
+24:car mon fils que voici était mort, et il est revenu à la vie; il était perdu, et il est retrouvé. Et ils commencèrent à se réjouir.&#10;
+25:Or, le fils aîné était dans les champs. Lorsqu'il revint et approcha de la maison, il entendit la musique et les danses.&#10;
+26:Il appela un des serviteurs, et lui demanda ce que c'était.&#10;
+27:Ce serviteur lui dit: Ton frère est de retour, et, parce qu'il l'a retrouvé en bonne santé, ton père a tué le veau gras.&#10;
+28:Il se mit en colère, et ne voulut pas entrer. Son père sortit, et le pria d'entrer.&#10;
+29:Mais il répondit à son père: Voici, il y a tant d'années que je te sers, sans avoir jamais transgressé tes ordres, et jamais tu ne m'as donné un chevreau pour que je me réjouisse avec mes amis.&#10;
+30:Et quand ton fils est arrivé, celui qui a mangé ton bien avec des prostituées, c'est pour lui que tu as tué le veau gras !&#10;
+31:Mon enfant, lui dit le père, tu es toujours avec moi, et tout ce que j'ai est à toi;&#10;
+32:mais il fallait bien s'égayer et se réjouir, parce que ton frère que voici était mort et qu'il est revenu à la vie, parce qu'il était perdu et qu'il est retrouvé.&#10;"
+                   FontFamily="KleeOne-SemiBold"
+                   Grid.Row="2"/>
+            <!--Row 3-->
+            <Label Text="Explicaton de la parabole"
+                   FontFamily="KleeOne-SemiBold"
+                   Grid.Row="3"
+                   HorizontalTextAlignment="Center"
+                   FontSize="Medium"/>
+            <!--Row 4-->
+            <Label Text="Bla bla bla"
+                   FontFamily="KleeOne-SemiBold"
+                   Grid.Row="4"/>
+            <!--Row 5-->
+            <Label Text="ACTES 4:12&#10;Il n'y a de salut en aucun autre; car il n'y a sous le ciel aucun autre nom qui ait été donné parmi les hommes, par lequel nous devions être sauvés."
+                   FontFamily="KleeOne-SemiBold"
+                   Grid.Row="5"
+                   FontAttributes="Italic"
+                   HorizontalTextAlignment="Center"
+                   TextColor="DarkSlateGray"/>
+        </Grid>
+    </ScrollView>
+</ContentPage>

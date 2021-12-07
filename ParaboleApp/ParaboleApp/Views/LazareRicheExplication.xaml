@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ParaboleApp.Views.LazareRicheExplication">
+    <ScrollView>
+        <Grid Margin="20"
+              RowSpacing="10"
+              ColumnSpacing="10">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="60"/>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="900"/>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="150"/>
+                <RowDefinition Height="200"/>
+                <RowDefinition Height="10"/>
+            </Grid.RowDefinitions>
+            <!--Row 0-->
+            <Label Text="La parabole de Lazare et du riche."
+                   FontFamily="KleeOne-SemiBold"
+                   Grid.Row="0"
+                   HorizontalTextAlignment="Center"
+                   FontSize="Large"
+                   VerticalOptions="CenterAndExpand" 
+                   HorizontalOptions="CenterAndExpand"
+                   FontAttributes="Bold"/>
+            <!--Row 1-->
+            <Label Text="Lecture des versets&#10;Luc 16, 19-31"
+                   FontFamily="KleeOne-SemiBold"
+                   Grid.Row="1"
+                   HorizontalTextAlignment="Center"
+                   FontSize="Medium"/>
+            <!--Row 2-->
+            <Label Text=" 19: Il y avait un homme riche, qui était vêtu de pourpre et de fin lin, et qui chaque jour menait joyeuse et brillante vie.&#10;
+20: Un pauvre, nommé Lazare, était couché à sa porte, couvert d'ulcères,&#10;
+21: et désireux de se rassasier des miettes qui tombaient de la table du riche ; et même les chiens venaient encore lécher ses ulcères.&#10;
+22: Le pauvre mourut, et il fut porté par les anges dans le sein d'Abraham. Le riche mourut aussi, et il fut enseveli.&#10;
+23: Dans le séjour des morts, il leva les yeux ; et, tandis qu'il était en proie aux tourments, il vit de loin Abraham, et Lazare dans son sein.&#10;
+24: Il s'écria : ''Père Abraham, aie pitié de moi, et envoie Lazare, pour qu'il trempe le bout de son doigt dans l'eau et me rafraîchisse la langue ; car je souffre cruellement dans cette flamme.''&#10;
+25: Abraham répondit : ''Mon enfant, souviens-toi que tu as reçu tes biens pendant ta vie, et que Lazare a eu les maux pendant la sienne ; maintenant il est ici consolé, et toi, tu souffres.&#10;
+26: D'ailleurs, il y a entre nous et vous un grand abîme, afin que ceux qui voudraient passer d'ici vers vous, ou de là vers nous, ne puissent le faire.''&#10;
+27: Le riche dit : ''Je te prie donc, père Abraham, d'envoyer Lazare dans la maison de mon père ; car j'ai cinq frères.&#10;
+28: C'est pour qu'il leur atteste ces choses, afin qu'ils ne viennent pas aussi dans ce lieu de tourments.''&#10;
+29: Abraham répondit : ''Ils ont Moïse et les prophètes ; qu'ils les écoutent.&#10;
+30: Et il dit : ''Non, père Abraham, mais si quelqu'un des morts va vers eux, ils se repentiront.''&#10;
+31: Et Abraham lui dit : ''S'ils n'écoutent pas Moïse et les prophètes, ils ne se laisseront pas persuader par quelqu'un qui ressusciterait des morts.''"
+                   FontFamily="KleeOne-SemiBold"
+                   Grid.Row="2"/>
+            <!--Row 3-->
+            <Label Text="Explicaton de la parabole"
+                   FontFamily="KleeOne-SemiBold"
+                   Grid.Row="3"
+                   HorizontalTextAlignment="Center"
+                   FontSize="Medium"/>
+            <!--Row 4-->
+            <Label Text="Cette parabole raconte la rencontre entre un riche homme et lazare et de ce qui se passe pour eux une fois mort."
+                   FontFamily="KleeOne-SemiBold"
+                   Grid.Row="4"/>
+            <!--Row 5-->
+            <Label Text="ACTES 4:12&#10;Il n'y a de salut en aucun autre; car il n'y a sous le ciel aucun autre nom qui ait été donné parmi les hommes, par lequel nous devions être sauvés."
+                   FontFamily="KleeOne-SemiBold"
+                   Grid.Row="5"
+                   FontAttributes="Italic"
+                   HorizontalTextAlignment="Center"
+                   TextColor="DarkSlateGray"/>
+        </Grid>
+    </ScrollView>
+</ContentPage>

@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ParaboleApp.Views.JeuneHommeRicheExplicationPage">
+    <ScrollView>
+        <Grid Margin="20"
+              RowSpacing="10"
+              ColumnSpacing="10">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="60"/>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="750"/>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="850"/>
+                <RowDefinition Height="100"/>
+                <RowDefinition Height="10"/>
+            </Grid.RowDefinitions>
+            <!--Row 0-->
+            <Label Text="La parabole du jeune homme riche."
+                   FontFamily="KleeOne-SemiBold"
+                   Grid.Row="0"
+                   HorizontalTextAlignment="Center"
+                   FontSize="Large"
+                   VerticalOptions="CenterAndExpand" 
+                   HorizontalOptions="CenterAndExpand"
+                   FontAttributes="Bold"/>
+            <!--Row 1-->
+            <Label Text="Lecture des versets&#10;Marc 10, 17-27"
+                   FontFamily="KleeOne-SemiBold"
+                   Grid.Row="1"
+                   HorizontalTextAlignment="Center"
+                   FontSize="Medium"/>
+            <!--Row 2-->
+            <Label Text=" 17:Et comme il sortait pour se mettre en chemin, quelqu'un étant accouru et s'étant jeté à ses genoux, lui demandait : Bon Maître, que dois-je faire pour hériter la vie éternelle ?&#10;
+18:Mais Jésus lui dit : Pourquoi m'appelles-tu bon ? Nul n'est bon sinon un seul, Dieu.&#10;
+19:Tu sais les commandements : Tu ne commettras point adultère ; tu ne tueras point ; tu ne déroberas point ; tu ne diras point de faux témoignage ; tu ne feras tort à personne ; honore ton père et ta mère.&#10;
+20:Mais il lui dit : Maître, j'ai observé toutes ces choses dès ma jeunesse.&#10;
+21:Et Jésus l'ayant regardé, l'aima, et lui dit : Il te manque une chose : Va, vends tout ce que tu as, et le donne aux pauvres, et tu auras un trésor dans le ciel ; puis viens, suis-moi.&#10;
+22:Mais, affligé de cette parole, il s'en alla tout triste ; car il avait de grands biens.&#10;
+23:Et Jésus, ayant regardé tout autour, dit à ses disciples : Combien difficilement ceux qui possèdent les richesses entreront dans le royaume de Dieu !&#10;
+24:Or les disciples étaient frappés d'étonnement de ses paroles. Mais Jésus, reprenant encore, leur dit : Mes enfants, qu'il est difficile à ceux qui se confient aux richesses d'entrer dans le royaume de Dieu !&#10;
+25:Il est plus facile à un chameau de passer par le trou de l'aiguille, qu'il ne l'est à un riche d'entrer dans le royaume de Dieu.&#10;
+26:Ils furent encore plus étonnés, et ils se disaient entre eux : Et qui peut être sauvé ?&#10;
+27:Jésus les regardant, dit : Aux hommes, cela est impossible, mais non pas à Dieu ; car toutes choses sont possibles à Dieu."
+                   FontFamily="KleeOne-SemiBold"
+                   Grid.Row="2"/>
+            <!--Row 3-->
+            <Label Text="Explicaton de la parabole"
+                   FontFamily="KleeOne-SemiBold"
+                   Grid.Row="3"
+                   HorizontalTextAlignment="Center"
+                   FontSize="Medium"/>
+            <!--Row 4-->
+            <Label Text="Cette parabole montre un jeune homme désireux d'en savoir plus sur la Vie Eternelle auprès de Jésus. Dès le début, il se montre ouvert et assoifé de la présence du Maitre.&#10;Les réponses du jeune homme suite à sa discusion avec Jésus montre son attachement à la Loi et son envie de bien faire.&#10;Chose importante à souligner, il est précisé que Jésus l'aima, ce qui démontre une grande importance dans cette relation naissante.Seulement, pour être avec complètement avec Jésus, il lui manque une dernière chose.&#10;Vendre ses richesses et les donner aux pauvres et c'est la que le bat blesse car ce jeune homme riche aime son argent, ses possesions et s'en débarrasser le met dans l'affliction.&#10;En racontant cette parabole à ses disciples, Jésus montre la difficulté d'acceder au Salut et d'amasser un trésor fabuleux au Ciel tout en voulant conserver ses richesses terrestre.&#10;En effet, le jour de notre mort, toutes nos possessions materielles seront finis, nous n'emmenerons rien d'ici bas avec nous.&#10;Dieu nous confie des biens, des richesses mais tout vient de lui, nous n'avons pas à nous y attacher. Seule la personne de Jésus mérite un véritable attachement même si nous aimons sincèrement notre famille, nos proches.&#10;Nous pouvons apprécier certaines choses saines et naturelles pour ce qu'elles sont mais en aucun cas, elles ne doivent devenir une entrave à notre relation avec Christ en vue du Salut.&#10;C'est ce qu'explique Jésus avec la comparaison du chameau, l'amour de la possesion devient vite une barrière infranchissable pour le Salut.&#10;Ainsi, à la question d'un disciple: à savoir qui peut sauver ? La réponse est clair et précise :&#10;Dieu et seulement Dieu le peut et la Parole le dit clairement:"
+                   FontFamily="KleeOne-SemiBold"
+                   Grid.Row="4"/>
+            <!--Row 5-->
+            <Label Text="ACTES 4:12&#10;Il n'y a de salut en aucun autre; car il n'y a sous le ciel aucun autre nom qui ait été donné parmi les hommes, par lequel nous devions être sauvés."
+                   FontFamily="KleeOne-SemiBold"
+                   Grid.Row="5"
+                   FontAttributes="Italic"
+                   HorizontalTextAlignment="Center"
+                   TextColor="DarkSlateGray"/>
+        </Grid>
+    </ScrollView>
+</ContentPage>

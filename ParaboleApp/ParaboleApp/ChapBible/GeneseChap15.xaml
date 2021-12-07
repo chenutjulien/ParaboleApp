@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ParaboleApp.ChapBible.GeneseChap15">
+    <ContentPage.Content>
+        <ScrollView>
+            <Grid>
+                <Grid.Background>
+                    <RadialGradientBrush >
+                        <GradientStop Color="#076585" Offset="0.1"/>
+                        <GradientStop Color="#fff" Offset="1"/>
+                    </RadialGradientBrush>
+                </Grid.Background>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="80"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="50"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="0.5*"/>
+                    <ColumnDefinition Width="0.5*"/>
+                </Grid.ColumnDefinitions>
+                <Label Text="Genèse Chapitre 15"
+                       HorizontalOptions="CenterAndExpand"
+                       VerticalTextAlignment="Start"
+                       TextColor="Black"
+                       FontFamily="KleeOne"
+                       Margin="10"
+                       Padding="10"
+                       Grid.ColumnSpan="2"
+                       Grid.Row="0"
+                       FontSize="Large"
+                       FontAttributes="Bold"/>
+                <Label Margin="5"
+                       Padding="5"
+                       Grid.ColumnSpan="2"
+                       Grid.Row="1"
+                       TextColor="Black"
+                       FontFamily="KleeOne"
+                       VerticalTextAlignment="Center"
+                       FontSize="Medium"
+                       Text=" 15.1
+     Après ces événements, la parole de l'Éternel fut adressée à Abram dans une vision, et il dit: Abram, ne crains point; je suis ton bouclier, et ta récompense sera très grande.&#10;
+15.2
+     Abram répondit: Seigneur Éternel, que me donneras-tu? Je m'en vais sans enfants; et l'héritier de ma maison, c'est Éliézer de Damas.&#10;
+15.3
+     Et Abram dit: Voici, tu ne m'as pas donné de postérité, et celui qui est né dans ma maison sera mon héritier.&#10;
+15.4
+     Alors la parole de l'Éternel lui fut adressée ainsi: Ce n'est pas lui qui sera ton héritier, mais c'est celui qui sortira de tes entrailles qui sera ton héritier.&#10;
+15.5
+     Et après l'avoir conduit dehors, il dit: Regarde vers le ciel, et compte les étoiles, si tu peux les compter. Et il lui dit: Telle sera ta postérité.&#10;
+15.6
+     Abram eut confiance en l'Éternel, qui le lui imputa à justice.&#10;
+15.7
+     L'Éternel lui dit encore: Je suis l'Éternel, qui t'ai fait sortir d'Ur en Chaldée, pour te donner en possession ce pays.&#10;
+15.8
+     Abram répondit: Seigneur Éternel, à quoi connaîtrai-je que je le posséderai?&#10;
+15.9
+     Et l'Éternel lui dit: Prends une génisse de trois ans, une chèvre de trois ans, un bélier de trois ans, une tourterelle et une jeune colombe.&#10;
+15.10
+     Abram prit tous ces animaux, les coupa par le milieu, et mit chaque morceau l'un vis-à-vis de l'autre; mais il ne partagea point les oiseaux.&#10;
+15.11
+     Les oiseaux de proie s'abattirent sur les cadavres; et Abram les chassa.&#10;
+15.12
+     Au coucher du soleil, un profond sommeil tomba sur Abram; et voici, une frayeur et une grande obscurité vinrent l'assaillir.&#10;
+15.13
+     Et l'Éternel dit à Abram: Sache que tes descendants seront étrangers dans un pays qui ne sera point à eux; ils y seront asservis, et on les opprimera pendant quatre cents ans.&#10;
+15.14
+     Mais je jugerai la nation à laquelle ils seront asservis, et ils sortiront ensuite avec de grandes richesses.&#10;
+15.15
+     Toi, tu iras en paix vers tes pères, tu seras enterré après une heureuse vieillesse.&#10;
+15.16
+     A la quatrième génération, ils reviendront ici; car l'iniquité des Amoréens n'est pas encore à son comble.&#10;
+15.17
+     Quand le soleil fut couché, il y eut une obscurité profonde; et voici, ce fut une fournaise fumante, et des flammes passèrent entre les animaux partagés.&#10;
+15.18
+     En ce jour-là, l'Éternel fit alliance avec Abram, et dit: Je donne ce pays à ta postérité, depuis le fleuve d'Égypte jusqu'au grand fleuve, au fleuve d'Euphrate,&#10;
+15.19
+     le pays des Kéniens, des Keniziens, des Kadmoniens,&#10;
+15.20
+     des Héthiens, des Phéréziens, des Rephaïm,&#10;
+15.21
+     des Amoréens, des Cananéens, des Guirgasiens et des Jébusiens."/>
+                <Button Text="Suivant"
+                        x:Name="Suivant"
+                        Grid.Column="1"
+                        Grid.Row="2"
+                        Margin="5"
+                        Padding="5"
+                        CornerRadius="10"
+                        Clicked="SuivantClicked"
+                        ImageSource="jouer.png"
+                        ContentLayout="right">
+                    <Button.Background>
+                        <LinearGradientBrush EndPoint="1,0">
+                            <GradientStop Color="#3a7bd5" Offset="0.1" />
+                            <GradientStop Color="#3a6073" Offset="1.0" />
+                        </LinearGradientBrush>
+                    </Button.Background>
+                </Button>
+                <Button Text="Précédent"
+                        x:Name="Précédent"
+                        Grid.Column="0"
+                        Grid.Row="2"
+                        Margin="5"
+                        Padding="5"
+                        CornerRadius="10"
+                        Clicked="PrecedentClicked"
+                        ImageSource="arriere.png">
+                    <Button.Background>
+                        <LinearGradientBrush EndPoint="1,0">
+                            <GradientStop Color="#3a7bd5" Offset="0.1" />
+                            <GradientStop Color="#3a6073" Offset="1.0" />
+                        </LinearGradientBrush>
+                    </Button.Background>
+                </Button>
+            </Grid>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

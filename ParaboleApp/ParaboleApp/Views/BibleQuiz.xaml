@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ParaboleApp.Views.BibleQuiz">
+    <ContentPage.Content>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="0.5*"/>
+                <ColumnDefinition Width="0.5*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="0.2*"/>
+                <RowDefinition Height="0.1*"/>
+                <RowDefinition Height="0.7*"/>
+            </Grid.RowDefinitions>
+            <Frame HeightRequest="130" Grid.ColumnSpan="2">
+                <Frame.Background>
+                    <!-- StartPoint defaults to (0,0) -->
+                    <LinearGradientBrush EndPoint="1,0">
+                        <GradientStop Color="Wheat"
+                          Offset="0.8" />
+                        <GradientStop Color="Salmon"
+                          Offset="1.0" />
+                    </LinearGradientBrush>
+                </Frame.Background>
+                <Label Text="Testez vos connaissances sur la Parole de Dieu avec les quiz."
+                   VerticalOptions="CenterAndExpand"
+                   FontSize="25"
+                   FontAttributes="Bold"
+                   FontFamily="Baloo"
+                   TextColor="DimGray"
+                   HorizontalTextAlignment="Center"
+                   HorizontalOptions="CenterAndExpand" />
+            </Frame>
+            <Label Text="Choisir le thème de votre quiz."
+                   VerticalOptions="CenterAndExpand"
+                   HorizontalOptions="CenterAndExpand"
+                   FontSize="Large"
+                   FontAttributes="Bold"
+                   FontFamily="Itim"
+                   TextColor="DimGray"
+                   Grid.Row="1"
+                   Grid.ColumnSpan="2"/>
+            <StackLayout Grid.Column="0" Grid.Row="2">
+                <Button Text="Histoire 01 "
+                    VerticalOptions="CenterAndExpand"
+                    HorizontalOptions="CenterAndExpand"
+                    FontSize="Medium"
+                    WidthRequest="130"
+                    FontAttributes="Italic"
+                    FontFamily="Itim"
+                    Grid.Row="1"
+                    Clicked="QuizHistoireClicked"
+                    BackgroundColor="DarkRed"/>
+            <Button Text="Proverbes"
+                    VerticalOptions="CenterAndExpand"
+                    HorizontalOptions="CenterAndExpand"
+                    FontSize="Medium"
+                    WidthRequest="130"
+                    FontAttributes="Italic"
+                    FontFamily="Itim"
+                    
+                    BackgroundColor="DarkRed"/>
+            <Button Text="Jésus"
+                    VerticalOptions="CenterAndExpand"
+                    HorizontalOptions="CenterAndExpand"
+                    FontSize="Medium"
+                    WidthRequest="130"
+                    FontAttributes="Italic"
+                    FontFamily="Itim"
+                    
+                    BackgroundColor="DarkRed"/>
+        </StackLayout>
+            <StackLayout Grid.Column="1" Grid.Row="2">
+                <Button Text="Histoire 02"
+                    VerticalOptions="CenterAndExpand"
+                    HorizontalOptions="CenterAndExpand"
+                    FontSize="Medium"
+                    WidthRequest="130"
+                    FontAttributes="Italic"
+                    FontFamily="Itim"
+                    Grid.Row="1"
+                    Clicked="QuizHistoire02Clicked"
+                    BackgroundColor="DarkRed"/>
+                <Button Text="Disciples"
+                    VerticalOptions="CenterAndExpand"
+                    HorizontalOptions="CenterAndExpand"
+                    FontSize="Medium"
+                    WidthRequest="130"
+                    FontAttributes="Italic"
+                    FontFamily="Itim"
+                    
+                    BackgroundColor="DarkRed"/>
+                <Button Text="Foi"
+                    VerticalOptions="CenterAndExpand"
+                    HorizontalOptions="CenterAndExpand"
+                    FontSize="Medium"
+                    WidthRequest="130"
+                    FontAttributes="Italic"
+                    FontFamily="Itim"
+                    
+                    BackgroundColor="DarkRed"/>
+            </StackLayout>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

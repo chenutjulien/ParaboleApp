@@ -1,0 +1,620 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ParaboleApp.Views.QuizHistoire02">
+    <Grid BackgroundColor="DarkKhaki">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="55"/>
+            <RowDefinition Height="55"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0.5*"/>
+            <ColumnDefinition Width="0.5*"/>
+        </Grid.ColumnDefinitions>
+        <StackLayout Grid.Row="1" Grid.ColumnSpan="2" x:Name="LancerQuiz"> <!-- Frame de lancement de quiz-->
+            <Frame BackgroundColor="#f5af19"
+                   Padding="5, 15, 5, 15"
+                   CornerRadius="0">
+                <Button VerticalOptions="End" 
+                    HorizontalOptions="Center"
+                    FontFamily="Baloo"
+                    Text="Commencer"
+                    Clicked="StartTimer_Clicked"
+                    IsVisible="true"
+                    BackgroundColor="#f12711"/>
+            </Frame>
+        </StackLayout>
+        <StackLayout Grid.Row="0" Grid.Column="0"> <!--Bloc du score Haut Gauche-->
+            <Label x:Name="Score"
+                   Text="Score : "
+                   FontFamily="Rounded"
+                   FontSize="30"
+                   TextColor="DarkSlateGray"
+                   HorizontalOptions="Start"
+                   Margin="10"/>
+        </StackLayout>
+        <StackLayout Grid.Row="0" Grid.Column="1"> <!--Bloc du timer Haut Droite-->
+            <Label x:Name="Timer"
+                   Text="00:00"
+                   FontFamily="Rounded"
+                   FontSize="30"
+                   TextColor="DarkSlateGray"
+                   HorizontalOptions="End"
+                   Margin="10"/>
+        </StackLayout>
+        <StackLayout Grid.ColumnSpan="2" Grid.Row="1" IsVisible="false" x:Name="BlocFinQuiz"> <!--Bloc frame affichage réponse-->
+                <Label Text="Bravo !"
+                       x:Name="TextFinQuiz"
+                       FontFamily="Rounded"
+                       FontSize="50"
+                       TextColor="MintCream"
+                       TextTransform="Uppercase"
+                       HorizontalTextAlignment="Center"
+                       Margin="0,30,0,10"/>
+        </StackLayout>
+        <StackLayout Grid.ColumnSpan="2" Grid.Row="2" IsVisible="false" x:Name="BlocPouceOk"> <!--Bloc pouce ok-->
+                <Image Source="ok.png"
+                       Aspect="AspectFit"
+                       HeightRequest="120"/>
+        </StackLayout>
+        <StackLayout Grid.ColumnSpan="2" Grid.Row="2" IsVisible="false" x:Name="BlocPouceKo"> <!--Bloc pouce ko-->
+                <Image Source="ko.png"
+                       Aspect="AspectFit"
+                       HeightRequest="120"/>
+        </StackLayout>
+        <StackLayout Grid.ColumnSpan="2" Grid.Row="3" IsVisible="false" x:Name="BlocExplicationReponse"> <!--Bloc explication réponse-->
+                <Label Text="En effet, Jésus est le chemin et la vérité et nul ne peut accéder au Père que par moi !"
+                       x:Name="ExplicationReponse"
+                       FontFamily="Rounded"
+                       FontSize="20"
+                       TextColor="MintCream"
+                       HorizontalTextAlignment="Center"/>
+        </StackLayout>
+        
+        <!-- -_-_-_-_-_-_-Bloc PREMIERE QUESTION-_-_-_-_-_-_- -->
+        <StackLayout Grid.ColumnSpan="2" Grid.Row="1" Margin="0,10,0,10" IsVisible="false" x:Name="BlocImage01"> <!--Bloc image 01-->
+            <Image Source="Pierre.jpg"
+                   Aspect="AspectFit"
+                   HeightRequest="150"/>
+        </StackLayout>
+        <StackLayout Grid.ColumnSpan="2" Grid.Row="2" IsVisible="false" x:Name="BlocQuestion01"> <!--Bloc question 01-->
+            <Label Text="Quel était le vrai nom de Pierre ?"
+                   FontFamily="Rounded"
+                   FontSize="Medium"
+                   TextColor="MintCream"
+                   HorizontalOptions="CenterAndExpand"
+                   Margin="10"/>
+        </StackLayout>
+         <!--Bloc choisir reponse 01-->
+            <RadioButton Value="Simon"
+                         x:Name="Proposition0101"
+                         Content="Simon"
+                         TextColor="MintCream"
+                         FontFamily="Rounded"
+                         Grid.Column="0"
+                         Grid.Row="3"
+                         Margin="40,10,0,0"
+                         CheckedChanged ="Reponse0101Clicked"
+                         IsVisible="false"/>
+            <RadioButton Value="Saûl"
+                         x:Name="Proposition0102"
+                         Content="Saûl"
+                         TextColor="MintCream"
+                         FontFamily="Rounded"
+                         Grid.Column="0"
+                         Grid.Row="4"
+                         Margin="40,10,0,0"
+                         CheckedChanged="Reponse0102Clicked"
+                         IsVisible="false"/>
+            <RadioButton Value="Pierre"
+                         x:Name="Proposition0103"
+                         Content="Pierre"
+                         TextColor="MintCream"
+                         FontFamily="Rounded"
+                         Grid.Column="1"
+                         Grid.Row="3"
+                         Margin="0,10,0,0"
+                         CheckedChanged="Reponse0103Clicked"
+                         IsVisible="false"/>
+            <RadioButton Value="Jacques"
+                         x:Name="Proposition0104"
+                         Content="Jacques"
+                         TextColor="MintCream"
+                         FontFamily="Rounded"
+                         Grid.Column="1"
+                         Grid.Row="4"
+                         Margin="0,10,0,0"
+                         CheckedChanged="Reponse0104Clicked"
+                         IsVisible="false"/>
+        <Label x:Name="ReponseQuestion01"
+               Text="Vous avez répondu : "
+               FontFamily="Rounded"
+               FontSize="Medium"
+               TextColor="MintCream"
+               Grid.ColumnSpan="2"
+               Grid.Row="5"
+               Margin="10"
+               IsVisible="false"/>
+        <StackLayout Grid.Row="6" Grid.ColumnSpan="2" Margin="10" x:Name="BlocValidationBas01" IsVisible="false"> <!--Bloc valider 01 bas-->
+            <Button x:Name="ValiderReponse01"
+                    Text="Valider"
+                    TextColor="DarkSlateGray"
+                    FontSize="30"
+                    FontFamily="Rounded"
+                    FontAttributes="Bold"
+                    Clicked="ValiderReponseClicked"
+                    HorizontalOptions="CenterAndExpand"
+                    VerticalOptions="CenterAndExpand"
+                    BackgroundColor="DarkKhaki"
+                    CornerRadius="15"/>
+        </StackLayout>
+        <StackLayout Grid.Row="6" Grid.ColumnSpan="2" Margin="10" x:Name="BlocSuivantBas01" IsVisible="false"> <!--Bloc suivant 01 bas-->
+            <Button x:Name="QuestionSuivante01"
+                    Text="Suivante"
+                    TextColor="DarkSlateGray"
+                    FontSize="30"
+                    FontFamily="Rounded"
+                    Clicked="QuestionSuivanteClicked01"
+                    FontAttributes="Bold"
+                    HorizontalOptions="CenterAndExpand"
+                    VerticalOptions="CenterAndExpand"
+                    BackgroundColor="DarkKhaki"
+                    CornerRadius="15"/>
+        </StackLayout>
+        <!-- -_-_-_-_-_-_-Bloc DEUXIEME QUESTION-_-_-_-_-_-_- -->
+        <StackLayout Grid.ColumnSpan="2" Grid.Row="1" Margin="0,10,0,10" IsVisible="false" x:Name="BlocImage02"> <!--Bloc image 02-->
+            <Image Source="Goliath.jpg"
+                   Aspect="AspectFit"
+                   HeightRequest="150"/>
+        </StackLayout>
+        <StackLayout Grid.ColumnSpan="2" Grid.Row="2" IsVisible="false" x:Name="BlocQuestion02"> <!--Bloc question 02-->
+            <Label Text="Qui fut vaincu par David en combat singulier ?"
+                   FontFamily="Rounded"
+                   FontSize="Medium"
+                   TextColor="MintCream"
+                   HorizontalOptions="CenterAndExpand"
+                   Margin="10,5,10,0"/>
+        </StackLayout>
+        <!--Bloc choisir reponse 02-->
+        <RadioButton Value="Saül"
+                         x:Name="Proposition0201"
+                         Content="Saül"
+                         TextColor="MintCream"
+                         FontFamily="Rounded"
+                         Grid.Column="0"
+                         Grid.Row="3"
+                         Margin="40,10,0,0"
+                         CheckedChanged="Reponse0201Clicked"
+                         IsVisible="false"/>
+        <RadioButton Value="Jonathan"
+                         x:Name="Proposition0202"
+                         Content="Jonathan"
+                         TextColor="MintCream"
+                         FontFamily="Rounded"
+                         Grid.Column="0"
+                         Grid.Row="4"
+                         Margin="40,10,0,0"
+                         CheckedChanged="Reponse0202Clicked"
+                         IsVisible="false"/>
+        <RadioButton Value="Goliath"
+                         x:Name="Proposition0203"
+                         Content="Goliath"
+                         TextColor="MintCream"
+                         FontFamily="Rounded"
+                         Grid.Column="1"
+                         Grid.Row="3"
+                         Margin="0,10,0,0"
+                         CheckedChanged="Reponse0203Clicked"
+                         IsVisible="false"/>
+        <RadioButton Value="Absalom"
+                         x:Name="Proposition0204"
+                         Content="Absalom"
+                         TextColor="MintCream"
+                         FontFamily="Rounded"
+                         Grid.Column="1"
+                         Grid.Row="4"
+                         Margin="0,10,0,0"
+                         CheckedChanged="Reponse0204Clicked"
+                         IsVisible="false"/>
+        <Label x:Name="ReponseQuestion02"
+               Text="Vous avez répondu : "
+               FontFamily="Rounded"
+               FontSize="Medium"
+               TextColor="MintCream"
+               Grid.ColumnSpan="2"
+               Grid.Row="5"
+               Margin="10,5,10,5"
+               IsVisible="false"/>
+        <StackLayout Grid.Row="6" Grid.ColumnSpan="2" Margin="10" x:Name="BlocValidationBas02" IsVisible="false"> <!--Bloc valider 02 bas-->
+            <Button x:Name="ValiderReponse02"
+                    Text="Valider"
+                    TextColor="DarkSlateGray"
+                    FontSize="30"
+                    FontFamily="Rounded"
+                    FontAttributes="Bold"
+                    Clicked="ValiderReponseClicked02"
+                    HorizontalOptions="CenterAndExpand"
+                    VerticalOptions="CenterAndExpand"
+                    BackgroundColor="DarkKhaki"
+                    CornerRadius="15"/>
+        </StackLayout>
+        <StackLayout Grid.Row="6" Grid.ColumnSpan="2" Margin="10" x:Name="BlocSuivantBas02" IsVisible="false"> <!--Bloc suivant 02 bas-->
+            <Button x:Name="QuestionSuivante02"
+                    Text="Suivante"
+                    TextColor="DarkSlateGray"
+                    FontSize="30"
+                    FontFamily="Rounded"
+                    Clicked="QuestionSuivanteClicked02"
+                    FontAttributes="Bold"
+                    HorizontalOptions="CenterAndExpand"
+                    VerticalOptions="CenterAndExpand"
+                    BackgroundColor="DarkKhaki"
+                    CornerRadius="15"/>
+        </StackLayout>
+        <!-- -_-_-_-_-_-_-Bloc TROISIEME QUESTION-_-_-_-_-_-_- -->
+        <StackLayout Grid.ColumnSpan="2" Grid.Row="1" Margin="0,10,0,10" IsVisible="false" x:Name="BlocImage03"> <!--Bloc image 03-->
+            <Image Source="Eve.jpg"
+                   Aspect="AspectFit"
+                   HeightRequest="170"/>
+        </StackLayout>
+        <StackLayout Grid.ColumnSpan="2" Grid.Row="2" IsVisible="false" x:Name="BlocQuestion03"> <!--Bloc question 03-->
+            <Label Text="Quel animal tenta Eve dans le jardin ? ?"
+                   FontFamily="Rounded"
+                   FontSize="Medium"
+                   TextColor="MintCream"
+                   HorizontalOptions="CenterAndExpand"
+                   Margin="10,5,10,0"/>
+        </StackLayout> <!--Bloc choisir reponse 03-->
+        <RadioButton Value="Le lion"
+                         x:Name="Proposition0301"
+                         Content="Le lion"
+                         TextColor="MintCream"
+                         FontFamily="Rounded"
+                         Grid.Column="0"
+                         Grid.Row="3"
+                         Margin="40,10,0,0"
+                         CheckedChanged ="Reponse0301Clicked"
+                         IsVisible="false"/>
+        <RadioButton Value="Le serpent"
+                         x:Name="Proposition0302"
+                         Content="Le serpent"
+                         TextColor="MintCream"
+                         FontFamily="Rounded"
+                         Grid.Column="0"
+                         Grid.Row="4"
+                         Margin="40,10,0,0"
+                         CheckedChanged="Reponse0302Clicked"
+                         IsVisible="false"/>
+        <RadioButton Value="Le singe"
+                         x:Name="Proposition0303"
+                         Content="Le singe"
+                         TextColor="MintCream"
+                         FontFamily="Rounded"
+                         Grid.Column="1"
+                         Grid.Row="3"
+                         Margin="0"
+                         CheckedChanged="Reponse0303Clicked"
+                         IsVisible="false"/>
+        <RadioButton Value="Le corbeau"
+                         x:Name="Proposition0304"
+                         Content="Le corbeau"
+                         TextColor="MintCream"
+                         FontFamily="Rounded"
+                         Grid.Column="1"
+                         Grid.Row="4"
+                         Margin="0"
+                         CheckedChanged="Reponse0304Clicked"
+                         IsVisible="false"/>
+        <Label x:Name="ReponseQuestion03"
+               Text="Vous avez répondu : "
+               FontFamily="Rounded"
+               FontSize="Medium"
+               TextColor="MintCream"
+               Grid.ColumnSpan="2"
+               Grid.Row="5"
+               Margin="10"
+               IsVisible="false"/>
+        <StackLayout Grid.Row="6" Grid.ColumnSpan="2" Margin="10" x:Name="BlocValidationBas03" IsVisible="false"> <!--Bloc valider 03 bas-->
+            <Button x:Name="ValiderReponse03"
+                    Text="Valider"
+                    TextColor="DarkSlateGray"
+                    FontSize="30"
+                    FontFamily="Rounded"
+                    FontAttributes="Bold"
+                    Clicked="ValiderReponseClicked03"
+                    HorizontalOptions="CenterAndExpand"
+                    VerticalOptions="CenterAndExpand"
+                    BackgroundColor="DarkKhaki"
+                    CornerRadius="15"/>
+        </StackLayout>
+        <StackLayout Grid.Row="6" Grid.ColumnSpan="2" Margin="10" x:Name="BlocSuivantBas03" IsVisible="false"> <!--Bloc suivant 03 bas-->
+            <Button x:Name="QuestionSuivante03"
+                    Text="Suivante"
+                    TextColor="DarkSlateGray"
+                    FontSize="30"
+                    FontFamily="Rounded"
+                    Clicked="QuestionSuivanteClicked03"
+                    FontAttributes="Bold"
+                    HorizontalOptions="CenterAndExpand"
+                    VerticalOptions="CenterAndExpand"
+                    BackgroundColor="DarkKhaki"
+                    CornerRadius="15"/>
+        </StackLayout>
+        <!-- -_-_-_-_-_-_-Bloc QUATRIEME QUESTION-_-_-_-_-_-_- -->
+        <StackLayout Grid.ColumnSpan="2" Grid.Row="1" Margin="0,10,0,10" IsVisible="false" x:Name="BlocImage04"> <!--Bloc image 04-->
+            <Image Source="Babel.jpg"
+                   Aspect="AspectFit"
+                   HeightRequest="150"/>
+        </StackLayout>
+        <StackLayout Grid.ColumnSpan="2" Grid.Row="2" IsVisible="false" x:Name="BlocQuestion04"> <!--Bloc question 04-->
+            <Label Text="Quel était le point commun des habitants sur terre à l'époque de Babel ?"
+                   FontFamily="Rounded"
+                   FontSize="Medium"
+                   TextColor="MintCream"
+                   HorizontalOptions="CenterAndExpand"
+                   Margin="10,5,10,0"/>
+        </StackLayout>
+         <!--Bloc choisir reponse 04-->
+            <RadioButton Value="Croire au même Dieu"
+                         x:Name="Proposition0401"
+                         Content="Croire au même Dieu"
+                         TextColor="MintCream"
+                         FontFamily="Rounded"
+                         Grid.Column="0"
+                         Grid.Row="3"
+                         Margin="40,5,0,0"
+                         CheckedChanged ="Reponse0401Clicked"
+                         IsVisible="false"/>
+            <RadioButton Value="Etre végétarien"
+                         x:Name="Proposition0402"
+                         Content="Etre végétarien"
+                         TextColor="MintCream"
+                         FontFamily="Rounded"
+                         Grid.Column="0"
+                         Grid.Row="4"
+                         Margin="40,5,0,0"
+                         CheckedChanged="Reponse0402Clicked"
+                         IsVisible="false"/>
+            <RadioButton Value="Vivre avec les animaux"
+                         x:Name="Proposition0403"
+                         Content="Vivre avec les animaux"
+                         TextColor="MintCream"
+                         FontFamily="Rounded"
+                         Grid.Column="1"
+                         Grid.Row="3"
+                         Margin="0,5,0,0"
+                         CheckedChanged="Reponse0403Clicked"
+                         IsVisible="false"/>
+            <RadioButton Value="Parler la même langue"
+                         x:Name="Proposition0404"
+                         Content="Parler la même langue"
+                         TextColor="MintCream"
+                         FontFamily="Rounded"
+                         Grid.Column="1"
+                         Grid.Row="4"
+                         Margin="0,5,0,0"
+                         CheckedChanged="Reponse0404Clicked"
+                         IsVisible="false"/>
+        <Label x:Name="ReponseQuestion04"
+               Text="Vous avez répondu : "
+               FontFamily="Rounded"
+               FontSize="Medium"
+               TextColor="MintCream"
+               Grid.ColumnSpan="2"
+               Grid.Row="5"
+               Margin="10,5,0,0"
+               IsVisible="false"/>
+        <StackLayout Grid.Row="6" Grid.ColumnSpan="2" Margin="10" x:Name="BlocValidationBas04" IsVisible="false"> <!--Bloc valider 04 bas-->
+            <Button x:Name="ValiderReponse04"
+                    Text="Valider"
+                    TextColor="DarkSlateGray"
+                    FontSize="30"
+                    FontFamily="Rounded"
+                    FontAttributes="Bold"
+                    Clicked="ValiderReponseClicked04"
+                    HorizontalOptions="CenterAndExpand"
+                    VerticalOptions="End"
+                    BackgroundColor="DarkKhaki"
+                    CornerRadius="15"/>
+        </StackLayout>
+        <StackLayout Grid.Row="6" Grid.ColumnSpan="2" Margin="10" x:Name="BlocSuivantBas04" IsVisible="false"> <!--Bloc suivant 04 bas-->
+            <Button x:Name="QuestionSuivante04"
+                    Text="Suivante"
+                    TextColor="DarkSlateGray"
+                    FontSize="30"
+                    FontFamily="Rounded"
+                    Clicked="QuestionSuivanteClicked04"
+                    FontAttributes="Bold"
+                    HorizontalOptions="CenterAndExpand"
+                    VerticalOptions="CenterAndExpand"
+                    BackgroundColor="DarkKhaki"
+                    CornerRadius="15"/>
+        </StackLayout>
+        <!-- -_-_-_-_-_-_-Bloc CINQUIEME QUESTION-_-_-_-_-_-_- -->
+        <StackLayout Grid.ColumnSpan="2" Grid.Row="1" Margin="0,10,0,10" IsVisible="false" x:Name="BlocImage05"> <!--Bloc image 05-->
+            <Image Source="Saul.jpg"
+                   Aspect="AspectFit"
+                   HeightRequest="150"/>
+        </StackLayout>
+        <StackLayout Grid.ColumnSpan="2" Grid.Row="2" IsVisible="false" x:Name="BlocQuestion05"> <!--Bloc question 05-->
+            <Label Text="Que fit Ananias quand il vit Saûl de Tarse ?"
+                   FontFamily="Rounded"
+                   FontSize="Medium"
+                   TextColor="MintCream"
+                   HorizontalOptions="CenterAndExpand"
+                   Margin="10"/>
+        </StackLayout>
+        <!--Bloc choisir reponse 05-->
+        <RadioButton Value="Le chasser"
+                         x:Name="Proposition0501"
+                         Content="Le chasser"
+                         TextColor="MintCream"
+                         FontFamily="Rounded"
+                         Grid.Column="0"
+                         Grid.Row="3"
+                         Margin="40,10,0,0"
+                         CheckedChanged ="Reponse0501Clicked"
+                         IsVisible="false"/>
+        <RadioButton Value="Imposer les mains"
+                         x:Name="Proposition0502"
+                         Content="Imposer les mains"
+                         TextColor="MintCream"
+                         FontFamily="Rounded"
+                         Grid.Column="0"
+                         Grid.Row="4"
+                         Margin="40,10,0,0"
+                         CheckedChanged="Reponse0502Clicked"
+                         IsVisible="false"/>
+        <RadioButton Value="Donner de l'argent"
+                         x:Name="Proposition0503"
+                         Content="Donner de l'argent"
+                         TextColor="MintCream"
+                         FontFamily="Rounded"
+                         Grid.Column="1"
+                         Grid.Row="3"
+                         Margin="0,10,0,0"
+                         CheckedChanged="Reponse0503Clicked"
+                         IsVisible="false"/>
+        <RadioButton Value="Le fuir"
+                         x:Name="Proposition0504"
+                         Content="Le fuir"
+                         TextColor="MintCream"
+                         FontFamily="Rounded"
+                         Grid.Column="1"
+                         Grid.Row="4"
+                         Margin="0,10,0,0"
+                         CheckedChanged="Reponse0504Clicked"
+                         IsVisible="false"/>
+        <Label x:Name="ReponseQuestion05"
+               Text="Vous avez répondu : "
+               FontFamily="Rounded"
+               FontSize="Medium"
+               TextColor="MintCream"
+               Grid.ColumnSpan="2"
+               Grid.Row="5"
+               Margin="10"
+               IsVisible="false"/>
+        <StackLayout Grid.Row="6" Grid.ColumnSpan="2" Margin="10" x:Name="BlocValidationBas05" IsVisible="false"> <!--Bloc valider 05 bas-->
+            <Button x:Name="ValiderReponse05"
+                    Text="Valider"
+                    TextColor="DarkSlateGray"
+                    FontSize="30"
+                    FontFamily="Rounded"
+                    FontAttributes="Bold"
+                    Clicked="ValiderReponseClicked05"
+                    HorizontalOptions="CenterAndExpand"
+                    VerticalOptions="CenterAndExpand"
+                    BackgroundColor="DarkKhaki"
+                    CornerRadius="15"/>
+        </StackLayout>
+        <StackLayout Grid.Row="6" Grid.ColumnSpan="2" Margin="10" x:Name="BlocSuivantBas05" IsVisible="false"> <!--Bloc suivant 05 bas-->
+            <Button x:Name="QuestionSuivante05"
+                    Text="Suivante"
+                    TextColor="DarkSlateGray"
+                    FontSize="30"
+                    FontFamily="Rounded"
+                    Clicked="QuestionSuivanteClicked05"
+                    FontAttributes="Bold"
+                    HorizontalOptions="CenterAndExpand"
+                    VerticalOptions="CenterAndExpand"
+                    BackgroundColor="DarkKhaki"
+                    CornerRadius="15"/>
+        </StackLayout>
+        <!-- -_-_-_-_-_-_-Bloc SIXIEME QUESTION-_-_-_-_-_-_- -->
+        <StackLayout Grid.ColumnSpan="2" Grid.Row="1" Margin="0,10,0,10" IsVisible="false" x:Name="BlocImage06"> <!--Bloc image 06-->
+            <Image Source="LazareTombe.jpg"
+                   Aspect="AspectFit"
+                   HeightRequest="150"/>
+        </StackLayout>
+        <StackLayout Grid.ColumnSpan="2" Grid.Row="2" IsVisible="false" x:Name="BlocQuestion06"> <!--Bloc question 06-->
+            <Label Text="Qui est la personne que Jésus réssuscita dans son tombeau ?"
+                   FontFamily="Rounded"
+                   FontSize="Medium"
+                   TextColor="MintCream"
+                   HorizontalOptions="CenterAndExpand"
+                   Margin="10"/>
+        </StackLayout>
+         <!--Bloc choisir reponse 06-->
+            <RadioButton Value="Elie"
+                         x:Name="Proposition0601"
+                         Content="Elie"
+                         TextColor="MintCream"
+                         FontFamily="Rounded"
+                         Grid.Column="0"
+                         Grid.Row="3"
+                         Margin="40,10,0,0"
+                         CheckedChanged ="Reponse0601Clicked"
+                         IsVisible="false"/>
+            <RadioButton Value="Marie"
+                         x:Name="Proposition0602"
+                         Content="Marie"
+                         TextColor="MintCream"
+                         FontFamily="Rounded"
+                         Grid.Column="0"
+                         Grid.Row="4"
+                         Margin="40,10,0,0"
+                         CheckedChanged="Reponse0602Clicked"
+                         IsVisible="false"/>
+            <RadioButton Value="Job"
+                         x:Name="Proposition0603"
+                         Content="Job"
+                         TextColor="MintCream"
+                         FontFamily="Rounded"
+                         Grid.Column="1"
+                         Grid.Row="3"
+                         Margin="0,10,0,0"
+                         CheckedChanged="Reponse0603Clicked"
+                         IsVisible="false"/>
+            <RadioButton Value="Lazare"
+                         x:Name="Proposition0604"
+                         Content="Lazare"
+                         TextColor="MintCream"
+                         FontFamily="Rounded"
+                         Grid.Column="1"
+                         Grid.Row="4"
+                         Margin="0,10,0,0"
+                         CheckedChanged="Reponse0604Clicked"
+                         IsVisible="false"/>
+        <Label x:Name="ReponseQuestion06"
+               Text="Vous avez répondu : "
+               FontFamily="Rounded"
+               FontSize="Medium"
+               TextColor="MintCream"
+               Grid.ColumnSpan="2"
+               Grid.Row="5"
+               Margin="10"
+               IsVisible="false"/>
+        <StackLayout Grid.Row="6" Grid.ColumnSpan="2" Margin="10" x:Name="BlocValidationBas06" IsVisible="false"> <!--Bloc valider 06 bas-->
+            <Button x:Name="ValiderReponse06"
+                    Text="Valider"
+                    TextColor="DarkSlateGray"
+                    FontSize="30"
+                    FontFamily="Rounded"
+                    FontAttributes="Bold"
+                    Clicked="ValiderReponseClicked06"
+                    HorizontalOptions="CenterAndExpand"
+                    VerticalOptions="CenterAndExpand"
+                    BackgroundColor="DarkKhaki"
+                    CornerRadius="15"/>
+        </StackLayout>
+        <StackLayout Grid.Row="6" Grid.ColumnSpan="2" Margin="10" x:Name="BlocSuivantBas06" IsVisible="false"> <!--Bloc suivant 06 bas-->
+            <Button x:Name="QuestionSuivante06"
+                    Text="Suivante"
+                    TextColor="DarkSlateGray"
+                    FontSize="30"
+                    FontFamily="Rounded"
+                    Clicked="QuestionSuivanteClicked06"
+                    FontAttributes="Bold"
+                    HorizontalOptions="CenterAndExpand"
+                    VerticalOptions="CenterAndExpand"
+                    BackgroundColor="DarkKhaki"
+                    CornerRadius="15"/>
+        </StackLayout>
+
+    </Grid>
+</ContentPage>

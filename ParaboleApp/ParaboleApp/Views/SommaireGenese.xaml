@@ -1,0 +1,797 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ParaboleApp.Views.SommaireGenese">
+    <ScrollView>
+        <Grid Margin="20"
+              RowSpacing="20"
+              ColumnSpacing="20">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="0.5*"/>
+                <ColumnDefinition Width="0.5*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="45"/>
+                <RowDefinition Height="45"/>
+                <RowDefinition Height="45"/>
+                <RowDefinition Height="45"/>
+                <RowDefinition Height="45"/>
+                <RowDefinition Height="45"/>
+                <RowDefinition Height="45"/>
+                <RowDefinition Height="45"/>
+                <RowDefinition Height="45"/>
+                <RowDefinition Height="45"/>
+                <RowDefinition Height="45"/>
+                <RowDefinition Height="45"/>
+                <RowDefinition Height="45"/>
+                <RowDefinition Height="45"/>
+                <RowDefinition Height="45"/>
+                <RowDefinition Height="45"/>
+                <RowDefinition Height="45"/>
+                <RowDefinition Height="45"/>
+                <RowDefinition Height="45"/>
+                <RowDefinition Height="45"/>
+                <RowDefinition Height="45"/>
+                <RowDefinition Height="45"/>
+                <RowDefinition Height="45"/>
+                <RowDefinition Height="45"/>
+                <RowDefinition Height="45"/>
+            </Grid.RowDefinitions>
+            <Button Text="Chapitre 1"
+                x:Name="Chap01"
+                Clicked="Chap01Clicked"
+                HorizontalOptions="FillAndExpand"
+                FontFamily="KleeOne-SemiBold"
+                FontSize="Medium"
+                FontAttributes="Bold"
+                Grid.Column="0"
+                Grid.Row="0">
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="1,0">
+                        <GradientStop Color="PaleTurquoise" Offset="0.1" />
+                        <GradientStop Color="SteelBlue" Offset="1.0" />
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+            <Button Text="Chapitre 2"
+                x:Name="Chap02"
+                Clicked="Chap02Clicked"
+                FontFamily="KleeOne-SemiBold"
+                FontSize="Medium"
+                FontAttributes="Bold"
+                Grid.Column="1"
+                Grid.Row="0">
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="1,0">
+                        <GradientStop Color="PaleTurquoise" Offset="0.1" />
+                        <GradientStop Color="SteelBlue" Offset="1.0" />
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+            <Button Text="Chapitre 3"
+                x:Name="Chap03"
+                Clicked="Chap03Clicked"
+                HorizontalOptions="FillAndExpand"
+                FontFamily="KleeOne-SemiBold"
+                FontSize="Medium"
+                FontAttributes="Bold"
+                Grid.Column="0"
+                Grid.Row="1">
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="1,0">
+                        <GradientStop Color="PaleTurquoise" Offset="0.1" />
+                        <GradientStop Color="SteelBlue" Offset="1.0" />
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+            <Button Text="Chapitre 4"
+                x:Name="Chap04"
+                FontFamily="KleeOne-SemiBold"
+                FontSize="Medium"
+                FontAttributes="Bold"
+                Clicked="Chap04Clicked"
+                Grid.Column="1"
+                Grid.Row="1">
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="1,0">
+                        <GradientStop Color="PaleTurquoise" Offset="0.1" />
+                        <GradientStop Color="SteelBlue" Offset="1.0" />
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+            <Button Text="Chapitre 5"
+                x:Name="Chap05"
+                Clicked="Chap05Clicked"
+                HorizontalOptions="FillAndExpand"
+                FontFamily="KleeOne-SemiBold"
+                FontSize="Medium"
+                FontAttributes="Bold"
+                Grid.Column="0"
+                Grid.Row="2">
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="1,0">
+                        <GradientStop Color="PaleTurquoise" Offset="0.1" />
+                        <GradientStop Color="SteelBlue" Offset="1.0" />
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+            <Button Text="Chapitre 6"
+                x:Name="Chap06"
+                FontFamily="KleeOne-SemiBold"
+                FontSize="Medium"
+                FontAttributes="Bold"
+                Clicked="Chap06Clicked"
+                Grid.Column="1"
+                Grid.Row="2">
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="1,0">
+                        <GradientStop Color="PaleTurquoise" Offset="0.1" />
+                        <GradientStop Color="SteelBlue" Offset="1.0" />
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+            <Button Text="Chapitre 7"
+                x:Name="Chap07"
+                Clicked="Chap07Clicked"
+                HorizontalOptions="FillAndExpand"
+                FontFamily="KleeOne-SemiBold"
+                FontSize="Medium"
+                FontAttributes="Bold"
+                Grid.Column="0"
+                Grid.Row="3">
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="1,0">
+                        <GradientStop Color="PaleTurquoise" Offset="0.1" />
+                        <GradientStop Color="SteelBlue" Offset="1.0" />
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+            <Button Text="Chapitre 8"
+                x:Name="Chap08"
+                FontFamily="KleeOne-SemiBold"
+                FontSize="Medium"
+                FontAttributes="Bold"
+                Clicked="Chap08Clicked"
+                Grid.Column="1"
+                Grid.Row="3">
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="1,0">
+                        <GradientStop Color="PaleTurquoise" Offset="0.1" />
+                        <GradientStop Color="SteelBlue" Offset="1.0" />
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+            <Button Text="Chapitre 9"
+                x:Name="Chap09"
+                HorizontalOptions="FillAndExpand"
+                FontFamily="KleeOne-SemiBold"
+                FontSize="Medium"
+                Clicked="Chap09Clicked"
+                FontAttributes="Bold"
+                Grid.Column="0"
+                Grid.Row="4">
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="1,0">
+                        <GradientStop Color="PaleTurquoise" Offset="0.1" />
+                        <GradientStop Color="SteelBlue" Offset="1.0" />
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+            <Button Text="Chapitre 10"
+                x:Name="Chap10"
+                FontFamily="KleeOne-SemiBold"
+                FontSize="Medium"
+                FontAttributes="Bold"
+                Clicked="Chap10Clicked"
+                Grid.Column="1"
+                Grid.Row="4">
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="1,0">
+                        <GradientStop Color="PaleTurquoise" Offset="0.1" />
+                        <GradientStop Color="SteelBlue" Offset="1.0" />
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+            <Button Text="Chapitre 11"
+                x:Name="Chap11"
+                    Clicked="Chap11Clicked"
+                HorizontalOptions="FillAndExpand"
+                FontFamily="KleeOne-SemiBold"
+                FontSize="Medium"
+                FontAttributes="Bold"
+                Grid.Column="0"
+                Grid.Row="5">
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="1,0">
+                        <GradientStop Color="PaleTurquoise" Offset="0.1" />
+                        <GradientStop Color="SteelBlue" Offset="1.0" />
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+            <Button Text="Chapitre 12"
+                x:Name="Chap12"
+                FontFamily="KleeOne-SemiBold"
+                FontSize="Medium"
+                FontAttributes="Bold"
+                Clicked="Chap12Clicked"
+                Grid.Column="1"
+                Grid.Row="5">
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="1,0">
+                        <GradientStop Color="PaleTurquoise" Offset="0.1" />
+                        <GradientStop Color="SteelBlue" Offset="1.0" />
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+            <Button Text="Chapitre 13"
+                x:Name="Chap13"
+                    Clicked="Chap13Clicked"
+                HorizontalOptions="FillAndExpand"
+                FontFamily="KleeOne-SemiBold"
+                FontSize="Medium"
+                FontAttributes="Bold"
+                Grid.Column="0"
+                Grid.Row="6">
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="1,0">
+                        <GradientStop Color="PaleTurquoise" Offset="0.1" />
+                        <GradientStop Color="SteelBlue" Offset="1.0" />
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+            <Button Text="Chapitre 14"
+                x:Name="Chap14"
+                FontFamily="KleeOne-SemiBold"
+                FontSize="Medium"
+                FontAttributes="Bold"
+                Clicked="Chap14Clicked"
+                Grid.Column="1"
+                Grid.Row="6">
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="1,0">
+                        <GradientStop Color="PaleTurquoise" Offset="0.1" />
+                        <GradientStop Color="SteelBlue" Offset="1.0" />
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+            <Button Text="Chapitre 15"
+                x:Name="Chap15"
+                    Clicked="Chap15Clicked"
+                HorizontalOptions="FillAndExpand"
+                FontFamily="KleeOne-SemiBold"
+                FontSize="Medium"
+                FontAttributes="Bold"
+                Grid.Column="0"
+                Grid.Row="7">
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="1,0">
+                        <GradientStop Color="PaleTurquoise" Offset="0.1" />
+                        <GradientStop Color="SteelBlue" Offset="1.0" />
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+            <Button Text="Chapitre 16"
+                x:Name="Chap16"
+                FontFamily="KleeOne-SemiBold"
+                FontSize="Medium"
+                FontAttributes="Bold"
+                Clicked="Chap16Clicked"
+                Grid.Column="1"
+                Grid.Row="7">
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="1,0">
+                        <GradientStop Color="PaleTurquoise" Offset="0.1" />
+                        <GradientStop Color="SteelBlue" Offset="1.0" />
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+            <Button Text="Chapitre 17"
+                x:Name="Chap17"
+                    Clicked="Chap17Clicked"
+                HorizontalOptions="FillAndExpand"
+                FontFamily="KleeOne-SemiBold"
+                FontSize="Medium"
+                FontAttributes="Bold"
+                Grid.Column="0"
+                Grid.Row="8">
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="1,0">
+                        <GradientStop Color="PaleTurquoise" Offset="0.1" />
+                        <GradientStop Color="SteelBlue" Offset="1.0" />
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+            <Button Text="Chapitre 18"
+                x:Name="Chap18"
+                FontFamily="KleeOne-SemiBold"
+                FontSize="Medium"
+                FontAttributes="Bold"
+                Clicked="Chap18Clicked"
+                Grid.Column="1"
+                Grid.Row="8">
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="1,0">
+                        <GradientStop Color="PaleTurquoise" Offset="0.1" />
+                        <GradientStop Color="SteelBlue" Offset="1.0" />
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+            <Button Text="Chapitre 19"
+                x:Name="Chap19"
+                Clicked="Chap19Clicked"
+                HorizontalOptions="FillAndExpand"
+                FontFamily="KleeOne-SemiBold"
+                FontSize="Medium"
+                FontAttributes="Bold"
+                Grid.Column="0"
+                Grid.Row="9">
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="1,0">
+                        <GradientStop Color="PaleTurquoise" Offset="0.1" />
+                        <GradientStop Color="SteelBlue" Offset="1.0" />
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+            <Button Text="Chapitre 20"
+                x:Name="Chap20"
+                    Clicked="Chap20Clicked"
+                HorizontalOptions="FillAndExpand"
+                FontFamily="KleeOne-SemiBold"
+                FontSize="Medium"
+                FontAttributes="Bold"
+                Grid.Column="1"
+                Grid.Row="9">
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="1,0">
+                        <GradientStop Color="PaleTurquoise" Offset="0.1" />
+                        <GradientStop Color="SteelBlue" Offset="1.0" />
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+            <Button Text="Chapitre 21"
+                x:Name="Chap21"
+                FontFamily="KleeOne-SemiBold"
+                FontSize="Medium"
+                FontAttributes="Bold"
+                
+                Grid.Column="0"
+                Grid.Row="10">
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="1,0">
+                        <GradientStop Color="PaleTurquoise" Offset="0.1" />
+                        <GradientStop Color="SteelBlue" Offset="1.0" />
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+            <Button Text="Chapitre 22"
+                x:Name="Chap22"
+                HorizontalOptions="FillAndExpand"
+                FontFamily="KleeOne-SemiBold"
+                FontSize="Medium"
+                FontAttributes="Bold"
+                Grid.Column="1"
+                Grid.Row="10">
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="1,0">
+                        <GradientStop Color="PaleTurquoise" Offset="0.1" />
+                        <GradientStop Color="SteelBlue" Offset="1.0" />
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+            <Button Text="Chapitre 23"
+                x:Name="Chap23"
+                FontFamily="KleeOne-SemiBold"
+                FontSize="Medium"
+                FontAttributes="Bold"                
+                Grid.Column="0"
+                Grid.Row="11">
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="1,0">
+                        <GradientStop Color="PaleTurquoise" Offset="0.1" />
+                        <GradientStop Color="SteelBlue" Offset="1.0" />
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+            <Button Text="Chapitre 24"
+                x:Name="Chap24"
+                HorizontalOptions="FillAndExpand"
+                FontFamily="KleeOne-SemiBold"
+                FontSize="Medium"
+                FontAttributes="Bold"
+                Grid.Column="1"
+                Grid.Row="11">
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="1,0">
+                        <GradientStop Color="PaleTurquoise" Offset="0.1" />
+                        <GradientStop Color="SteelBlue" Offset="1.0" />
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+            <Button Text="Chapitre 25"
+                x:Name="Chap25"
+                FontFamily="KleeOne-SemiBold"
+                FontSize="Medium"
+                FontAttributes="Bold"                
+                Grid.Column="0"
+                Grid.Row="12">
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="1,0">
+                        <GradientStop Color="PaleTurquoise" Offset="0.1" />
+                        <GradientStop Color="SteelBlue" Offset="1.0" />
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+            <Button Text="Chapitre 26"
+                x:Name="Chap26"
+                HorizontalOptions="FillAndExpand"
+                FontFamily="KleeOne-SemiBold"
+                FontSize="Medium"
+                FontAttributes="Bold"
+                Grid.Column="1"
+                Grid.Row="12">
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="1,0">
+                        <GradientStop Color="PaleTurquoise" Offset="0.1" />
+                        <GradientStop Color="SteelBlue" Offset="1.0" />
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+            <Button Text="Chapitre 27"
+                x:Name="Chap27"
+                FontFamily="KleeOne-SemiBold"
+                FontSize="Medium"
+                FontAttributes="Bold"                
+                Grid.Column="0"
+                Grid.Row="13">
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="1,0">
+                        <GradientStop Color="PaleTurquoise" Offset="0.1" />
+                        <GradientStop Color="SteelBlue" Offset="1.0" />
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+            <Button Text="Chapitre 28"
+                x:Name="Chap28"
+                HorizontalOptions="FillAndExpand"
+                FontFamily="KleeOne-SemiBold"
+                FontSize="Medium"
+                FontAttributes="Bold"
+                Grid.Column="1"
+                Grid.Row="13">
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="1,0">
+                        <GradientStop Color="PaleTurquoise" Offset="0.1" />
+                        <GradientStop Color="SteelBlue" Offset="1.0" />
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+            <Button Text="Chapitre 29"
+                x:Name="Chap29"
+                FontFamily="KleeOne-SemiBold"
+                FontSize="Medium"
+                FontAttributes="Bold"                
+                Grid.Column="0"
+                Grid.Row="14">
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="1,0">
+                        <GradientStop Color="PaleTurquoise" Offset="0.1" />
+                        <GradientStop Color="SteelBlue" Offset="1.0" />
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+            <Button Text="Chapitre 30"
+                x:Name="Chap30"
+                HorizontalOptions="FillAndExpand"
+                FontFamily="KleeOne-SemiBold"
+                FontSize="Medium"
+                FontAttributes="Bold"
+                Grid.Column="1"
+                Grid.Row="14">
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="1,0">
+                        <GradientStop Color="PaleTurquoise" Offset="0.1" />
+                        <GradientStop Color="SteelBlue" Offset="1.0" />
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+            <Button Text="Chapitre 31"
+                x:Name="Chap31"
+                FontFamily="KleeOne-SemiBold"
+                FontSize="Medium"
+                FontAttributes="Bold"                
+                Grid.Column="0"
+                Grid.Row="15">
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="1,0">
+                        <GradientStop Color="PaleTurquoise" Offset="0.1" />
+                        <GradientStop Color="SteelBlue" Offset="1.0" />
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+            <Button Text="Chapitre 32"
+                x:Name="Chap32"
+                HorizontalOptions="FillAndExpand"
+                FontFamily="KleeOne-SemiBold"
+                FontSize="Medium"
+                FontAttributes="Bold"
+                Grid.Column="1"
+                Grid.Row="15">
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="1,0">
+                        <GradientStop Color="PaleTurquoise" Offset="0.1" />
+                        <GradientStop Color="SteelBlue" Offset="1.0" />
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+            <Button Text="Chapitre 33"
+                x:Name="Chap33"
+                FontFamily="KleeOne-SemiBold"
+                FontSize="Medium"
+                FontAttributes="Bold"                
+                Grid.Column="0"
+                Grid.Row="16">
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="1,0">
+                        <GradientStop Color="PaleTurquoise" Offset="0.1" />
+                        <GradientStop Color="SteelBlue" Offset="1.0" />
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+            <Button Text="Chapitre 34"
+                x:Name="Chap34"
+                HorizontalOptions="FillAndExpand"
+                FontFamily="KleeOne-SemiBold"
+                FontSize="Medium"
+                FontAttributes="Bold"
+                Grid.Column="1"
+                Grid.Row="16">
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="1,0">
+                        <GradientStop Color="PaleTurquoise" Offset="0.1" />
+                        <GradientStop Color="SteelBlue" Offset="1.0" />
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+            <Button Text="Chapitre 35"
+                x:Name="Chap35"
+                FontFamily="KleeOne-SemiBold"
+                FontSize="Medium"
+                FontAttributes="Bold"                
+                Grid.Column="0"
+                Grid.Row="17">
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="1,0">
+                        <GradientStop Color="PaleTurquoise" Offset="0.1" />
+                        <GradientStop Color="SteelBlue" Offset="1.0" />
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+            <Button Text="Chapitre 36"
+                x:Name="Chap36"
+                HorizontalOptions="FillAndExpand"
+                FontFamily="KleeOne-SemiBold"
+                FontSize="Medium"
+                FontAttributes="Bold"
+                Grid.Column="1"
+                Grid.Row="17">
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="1,0">
+                        <GradientStop Color="PaleTurquoise" Offset="0.1" />
+                        <GradientStop Color="SteelBlue" Offset="1.0" />
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+            <Button Text="Chapitre 37"
+                x:Name="Chap37"
+                FontFamily="KleeOne-SemiBold"
+                FontSize="Medium"
+                FontAttributes="Bold"                
+                Grid.Column="0"
+                Grid.Row="18">
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="1,0">
+                        <GradientStop Color="PaleTurquoise" Offset="0.1" />
+                        <GradientStop Color="SteelBlue" Offset="1.0" />
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+            <Button Text="Chapitre 38"
+                x:Name="Chap38"
+                HorizontalOptions="FillAndExpand"
+                FontFamily="KleeOne-SemiBold"
+                FontSize="Medium"
+                FontAttributes="Bold"
+                Grid.Column="1"
+                Grid.Row="18">
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="1,0">
+                        <GradientStop Color="PaleTurquoise" Offset="0.1" />
+                        <GradientStop Color="SteelBlue" Offset="1.0" />
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+            <Button Text="Chapitre 39"
+                x:Name="Chap39"
+                FontFamily="KleeOne-SemiBold"
+                FontSize="Medium"
+                FontAttributes="Bold"                
+                Grid.Column="0"
+                Grid.Row="19">
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="1,0">
+                        <GradientStop Color="PaleTurquoise" Offset="0.1" />
+                        <GradientStop Color="SteelBlue" Offset="1.0" />
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+            <Button Text="Chapitre 40"
+                x:Name="Chap40"
+                HorizontalOptions="FillAndExpand"
+                FontFamily="KleeOne-SemiBold"
+                FontSize="Medium"
+                FontAttributes="Bold"
+                Grid.Column="1"
+                Grid.Row="19">
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="1,0">
+                        <GradientStop Color="PaleTurquoise" Offset="0.1" />
+                        <GradientStop Color="SteelBlue" Offset="1.0" />
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+            <Button Text="Chapitre 41"
+                x:Name="Chap41"
+                FontFamily="KleeOne-SemiBold"
+                FontSize="Medium"
+                FontAttributes="Bold"                
+                Grid.Column="0"
+                Grid.Row="20">
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="1,0">
+                        <GradientStop Color="PaleTurquoise" Offset="0.1" />
+                        <GradientStop Color="SteelBlue" Offset="1.0" />
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+            <Button Text="Chapitre 42"
+                x:Name="Chap42"
+                HorizontalOptions="FillAndExpand"
+                FontFamily="KleeOne-SemiBold"
+                FontSize="Medium"
+                FontAttributes="Bold"
+                Grid.Column="1"
+                Grid.Row="20">
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="1,0">
+                        <GradientStop Color="PaleTurquoise" Offset="0.1" />
+                        <GradientStop Color="SteelBlue" Offset="1.0" />
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+            <Button Text="Chapitre 43"
+                x:Name="Chap43"
+                FontFamily="KleeOne-SemiBold"
+                FontSize="Medium"
+                FontAttributes="Bold"                
+                Grid.Column="0"
+                Grid.Row="21">
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="1,0">
+                        <GradientStop Color="PaleTurquoise" Offset="0.1" />
+                        <GradientStop Color="SteelBlue" Offset="1.0" />
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+            <Button Text="Chapitre 44"
+                x:Name="Chap44"
+                HorizontalOptions="FillAndExpand"
+                FontFamily="KleeOne-SemiBold"
+                FontSize="Medium"
+                FontAttributes="Bold"
+                Grid.Column="1"
+                Grid.Row="21">
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="1,0">
+                        <GradientStop Color="PaleTurquoise" Offset="0.1" />
+                        <GradientStop Color="SteelBlue" Offset="1.0" />
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+            <Button Text="Chapitre 45"
+                x:Name="Chap45"
+                FontFamily="KleeOne-SemiBold"
+                FontSize="Medium"
+                FontAttributes="Bold"                
+                Grid.Column="0"
+                Grid.Row="22">
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="1,0">
+                        <GradientStop Color="PaleTurquoise" Offset="0.1" />
+                        <GradientStop Color="SteelBlue" Offset="1.0" />
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+            <Button Text="Chapitre 46"
+                x:Name="Chap46"
+                HorizontalOptions="FillAndExpand"
+                FontFamily="KleeOne-SemiBold"
+                FontSize="Medium"
+                FontAttributes="Bold"
+                Grid.Column="1"
+                Grid.Row="22">
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="1,0">
+                        <GradientStop Color="PaleTurquoise" Offset="0.1" />
+                        <GradientStop Color="SteelBlue" Offset="1.0" />
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+            <Button Text="Chapitre 47"
+                x:Name="Chap47"
+                FontFamily="KleeOne-SemiBold"
+                FontSize="Medium"
+                FontAttributes="Bold"                
+                Grid.Column="0"
+                Grid.Row="23">
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="1,0">
+                        <GradientStop Color="PaleTurquoise" Offset="0.1" />
+                        <GradientStop Color="SteelBlue" Offset="1.0" />
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+            <Button Text="Chapitre 48"
+                x:Name="Chap48"
+                HorizontalOptions="FillAndExpand"
+                FontFamily="KleeOne-SemiBold"
+                FontSize="Medium"
+                FontAttributes="Bold"
+                Grid.Column="1"
+                Grid.Row="23">
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="1,0">
+                        <GradientStop Color="PaleTurquoise" Offset="0.1" />
+                        <GradientStop Color="SteelBlue" Offset="1.0" />
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+            <Button Text="Chapitre 49"
+                x:Name="Chap49"
+                FontFamily="KleeOne-SemiBold"
+                FontSize="Medium"
+                FontAttributes="Bold"                
+                Grid.Column="0"
+                Grid.Row="24">
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="1,0">
+                        <GradientStop Color="PaleTurquoise" Offset="0.1" />
+                        <GradientStop Color="SteelBlue" Offset="1.0" />
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+            <Button Text="Chapitre 50"
+                x:Name="Chap50"
+                HorizontalOptions="FillAndExpand"
+                FontFamily="KleeOne-SemiBold"
+                FontSize="Medium"
+                FontAttributes="Bold"
+                Grid.Column="1"
+                Grid.Row="24">
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="1,0">
+                        <GradientStop Color="PaleTurquoise" Offset="0.1" />
+                        <GradientStop Color="SteelBlue" Offset="1.0" />
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+
+            <Button Text="Retour aux choix des livres bibliques"
+                    x:Name="RetourLivre"
+                    Clicked="RetourLivreClicked"
+                    Grid.ColumnSpan="2"
+                    Grid.Row="25"
+                    Margin="10"/>
+
+        </Grid>
+    </ScrollView>
+</ContentPage>

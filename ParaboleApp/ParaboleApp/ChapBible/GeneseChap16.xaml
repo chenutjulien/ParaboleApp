@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ParaboleApp.ChapBible.GeneseChap16">
+    <ContentPage.Content>
+        <ScrollView>
+            <Grid>
+                <Grid.Background>
+                    <RadialGradientBrush >
+                        <GradientStop Color="#076585" Offset="0.1"/>
+                        <GradientStop Color="#fff" Offset="1"/>
+                    </RadialGradientBrush>
+                </Grid.Background>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="80"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="50"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="0.5*"/>
+                    <ColumnDefinition Width="0.5*"/>
+                </Grid.ColumnDefinitions>
+                <Label Text="Genèse Chapitre 16"
+                       HorizontalOptions="CenterAndExpand"
+                       VerticalTextAlignment="Start"
+                       TextColor="Black"
+                       FontFamily="KleeOne"
+                       Margin="10"
+                       Padding="10"
+                       Grid.ColumnSpan="2"
+                       Grid.Row="0"
+                       FontSize="Large"
+                       FontAttributes="Bold"/>
+                <Label Margin="5"
+                       Padding="5"
+                       Grid.ColumnSpan="2"
+                       Grid.Row="1"
+                       TextColor="Black"
+                       FontFamily="KleeOne"
+                       VerticalTextAlignment="Center"
+                       FontSize="Medium"
+                       Text=" 16.1
+     Saraï, femme d'Abram, ne lui avait point donné d'enfants. Elle avait une servante Égyptienne, nommée Agar.&#10;
+16.2
+     Et Saraï dit à Abram: Voici, l'Éternel m'a rendue stérile; viens, je te prie, vers ma servante; peut-être aurai-je par elle des enfants. Abram écouta la voix de Saraï.&#10;
+16.3
+     Alors Saraï, femme d'Abram, prit Agar, l'Égyptienne, sa servante, et la donna pour femme à Abram, son mari, après qu'Abram eut habité dix années dans le pays de Canaan.&#10;
+16.4
+     Il alla vers Agar, et elle devint enceinte. Quand elle se vit enceinte, elle regarda sa maîtresse avec mépris.&#10;
+16.5
+     Et Saraï dit à Abram: L'outrage qui m'est fait retombe sur toi. J'ai mis ma servante dans ton sein; et, quand elle a vu qu'elle était enceinte, elle m'a regardée avec mépris. Que l'Éternel soit juge entre moi et toi!&#10;
+16.6
+     Abram répondit à Saraï: Voici, ta servante est en ton pouvoir, agis à son égard comme tu le trouveras bon. Alors Saraï la maltraita; et Agar s'enfuit loin d'elle.&#10;
+16.7
+     L'ange de l'Éternel la trouva près d'une source d'eau dans le désert, près de la source qui est sur le chemin de Schur.&#10;
+16.8
+     Il dit: Agar, servante de Saraï, d'où viens-tu, et où vas-tu? Elle répondit: Je fuis loin de Saraï, ma maîtresse.&#10;
+16.9
+     L'ange de l'Éternel lui dit: Retourne vers ta maîtresse, et humilie-toi sous sa main.&#10;
+16.10
+     L'ange de l'Éternel lui dit: Je multiplierai ta postérité, et elle sera si nombreuse qu'on ne pourra la compter.&#10;
+16.11
+     L'ange de l'Éternel lui dit: Voici, tu es enceinte, et tu enfanteras un fils, à qui tu donneras le nom d'Ismaël; car l'Éternel t'a entendue dans ton affliction.&#10;
+16.12
+     Il sera comme un âne sauvage; sa main sera contre tous, et la main de tous sera contre lui; et il habitera en face de tous ses frères.&#10;
+16.13
+     Elle appela Atta El roï le nom de l'Éternel qui lui avait parlé; car elle dit: Ai-je rien vu ici, après qu'il m'a vue?&#10;
+16.14
+     C'est pourquoi l'on a appelé ce puits le puits de Lachaï roï; il est entre Kadès et Bared.&#10;
+16.15
+     Agar enfanta un fils à Abram; et Abram donna le nom d'Ismaël au fils qu'Agar lui enfanta.&#10;
+16.16
+     Abram était âgé de quatre-vingt-six ans lorsqu'Agar enfanta Ismaël à Abram."/>
+                <Button Text="Suivant"
+                        x:Name="Suivant"
+                        Grid.Column="1"
+                        Grid.Row="2"
+                        Margin="5"
+                        Padding="5"
+                        CornerRadius="10"
+                        Clicked="SuivantClicked"
+                        ImageSource="jouer.png"
+                        ContentLayout="right">
+                    <Button.Background>
+                        <LinearGradientBrush EndPoint="1,0">
+                            <GradientStop Color="#3a7bd5" Offset="0.1" />
+                            <GradientStop Color="#3a6073" Offset="1.0" />
+                        </LinearGradientBrush>
+                    </Button.Background>
+                </Button>
+                <Button Text="Précédent"
+                        x:Name="Précédent"
+                        Grid.Column="0"
+                        Grid.Row="2"
+                        Margin="5"
+                        Padding="5"
+                        CornerRadius="10"
+                        Clicked="PrecedentClicked"
+                        ImageSource="arriere.png">
+                    <Button.Background>
+                        <LinearGradientBrush EndPoint="1,0">
+                            <GradientStop Color="#3a7bd5" Offset="0.1" />
+                            <GradientStop Color="#3a6073" Offset="1.0" />
+                        </LinearGradientBrush>
+                    </Button.Background>
+                </Button>
+            </Grid>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,183 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ParaboleApp.Views.ParaboleAccueil">
+    <ScrollView>
+        <StackLayout Spacing="20"
+                     Padding="10"
+                     BackgroundColor="White">
+            <Label Text="Découvrons la vie de Jésus avec ses paraboles."
+                   Margin="20"
+                   FontSize="Large"
+                   TextColor="DarkSalmon"
+                   FontFamily="KleeOne"
+                   HorizontalTextAlignment="Center"
+                   VerticalOptions="StartAndExpand" 
+                   HorizontalOptions="CenterAndExpand"/>
+            <Label Text="Choisissez votre parabole."
+                   Margin="20"
+                   FontSize="Medium"
+                   TextColor="DarkSalmon"
+                   FontFamily="Baloo2-ExtraBold.ttf"
+                   FontAttributes="Italic"
+                   HorizontalTextAlignment="Center"/>
+
+            <Frame Padding="16"
+                 BorderColor="Goldenrod"
+                   BackgroundColor="WhiteSmoke">
+                <StackLayout Spacing="16">
+                    <Label Text="Marc 10: 17-22"
+                           FontFamily="Baloo"
+                           FontAttributes="Bold"
+                           FontSize="Medium"
+                           VerticalTextAlignment="Center"
+                           Margin="0, 0, 0, -10"/>
+                    <Image Source="jeuneriche.png"
+                           Margin="100, -30, -50, 10"
+                           Aspect="AspectFit"/>
+                    <Label Text="Découvrez la parabole du jeune homme riche"
+                           FontFamily="KleeOne-SemiBold"
+                       FontSize="24"
+                       TextColor="Gray"/>
+                    <Label Text="Une histoire extraordinaire sur la recherche de la vie éternellle d'un jeune homme auprès de Jésus."
+                           FontFamily="KleeOne-SemiBold"
+                       TextColor="Gray"
+                       FontSize="14"/>
+                    <Button Text="En savoir plus"
+                            x:Name="Parabole02"
+                            HorizontalOptions="End"
+                            Clicked="ButtonJeuneHommeRiche"
+                            FontFamily="KleeOne-SemiBold"
+                            FontSize="Medium"
+                            FontAttributes="Bold"
+                            ImageSource="ParoleIcon.png">
+                        <Button.Background>
+                            <LinearGradientBrush EndPoint="1,0">
+                                <GradientStop Color="Wheat" Offset="0.1" />
+                                <GradientStop Color="Salmon" Offset="1.0" />
+                            </LinearGradientBrush>
+                        </Button.Background>
+                    </Button>
+                </StackLayout>
+            </Frame>
+
+            <Frame Padding="16"
+                 BorderColor="Goldenrod"
+                   BackgroundColor="WhiteSmoke">
+                <StackLayout Spacing="16">
+                    <Label Text="Luc 15: 11-32"
+                           FontAttributes="Bold"
+                           FontFamily="KleeOne-SemiBold"
+                           FontSize="Medium"
+                           VerticalTextAlignment="Center"
+                           Margin="0, 0, 0, -10"/>
+                    <Image Source="filsprodigue.png"
+                           Margin="100, -30, -50, 10"
+                           Aspect="AspectFit"/>
+                    <Label Text="Découvrez la parabole du fils prodigue"
+                           FontFamily="KleeOne-SemiBold"
+                       FontSize="24"
+                       TextColor="Gray"/>
+                    <Label Text="Une histoire extraordinaire sur la réconciliation et la repentance d'un fils qui revient chez son père."
+                           FontFamily="KleeOne-SemiBold"
+                       TextColor="Gray"
+                       FontSize="14"/>
+                    <Button Text="En savoir plus"
+                            FontFamily="KleeOne-SemiBold"
+                            x:Name="Parabole01"
+                            HorizontalOptions="End"
+                            Clicked="ButtonFilsProdigue"
+                            FontSize="Medium"
+                            FontAttributes="Bold"
+                            ImageSource="ParoleIcon.png">
+                        <Button.Background>
+                            <LinearGradientBrush EndPoint="1,0">
+                                <GradientStop Color="Wheat" Offset="0.1" />
+                                <GradientStop Color="Salmon" Offset="1.0" />
+                            </LinearGradientBrush>
+                        </Button.Background>
+                    </Button>
+                </StackLayout>
+            </Frame>
+
+            <Frame Padding="16"
+                   BackgroundColor="WhiteSmoke"
+                 BorderColor="Goldenrod">
+                <StackLayout Spacing="16">
+                    <Label Text="Luc 16: 19-31"
+                           FontAttributes="Bold"
+                           FontFamily="KleeOne-SemiBold"
+                           FontSize="Medium"
+                           VerticalTextAlignment="Center"
+                           Margin="0, 0, 0, -10"/>
+                    <Image Source="lazare.png"
+                           Margin="100, -30, -50, 10"
+                           Aspect="AspectFit"/>
+                    <Label Text="Découvrez la parabole de Lazare et du riche"
+                           FontFamily="KleeOne-SemiBold"
+                       FontSize="24"
+                       TextColor="Gray"/>
+                    <Label Text="Une histoire extraordinaire sur les conséquences de nos actes pendant notre vie terrestre."
+                           FontFamily="KleeOne-SemiBold"
+                       TextColor="Gray"
+                       FontSize="14"/>
+                    <Button Text="En savoir plus"
+                            x:Name="Parabole03"
+                            FontFamily="KleeOne-SemiBold"
+                            HorizontalOptions="End"
+                            Clicked="ButtonLazareRiche"
+                            FontSize="Medium"
+                            FontAttributes="Bold"
+                            ImageSource="ParoleIcon.png">
+                        <Button.Background>
+                            <LinearGradientBrush EndPoint="1,0">
+                                <GradientStop Color="Wheat" Offset="0.1" />
+                                <GradientStop Color="Salmon" Offset="1.0" />
+                            </LinearGradientBrush>
+                        </Button.Background>
+                    </Button>
+                </StackLayout>
+            </Frame>
+
+            <Frame Padding="16"
+                   BackgroundColor="WhiteSmoke"
+                 BorderColor="Goldenrod">
+                <StackLayout Spacing="16">
+                    <Label Text="Jean 18: 23-35"
+                           FontFamily="KleeOne-SemiBold"
+                           FontAttributes="Bold"
+                           FontSize="Medium"
+                           VerticalTextAlignment="Center"
+                           Margin="0, 0, 0, -10"/>
+                    <Image Source="serviteurcruel.png"
+                           Margin="100, -30, -50, 10"
+                           Aspect="AspectFit"/>
+                    <Label Text="Découvrez la parabole du serviteur cruel"
+                           FontFamily="KleeOne-SemiBold"
+                       FontSize="24"
+                       TextColor="Gray"/>
+                    <Label Text="Une histoire extraordinaire sur la clémence et le pardon dont on use envers nous."
+                       TextColor="Gray"
+                           FontFamily="KleeOne-SemiBold"
+                       FontSize="14"/>
+                    <Button Text="En savoir plus"
+                            FontFamily="KleeOne-SemiBold"
+                            x:Name="Parabole04"
+                            HorizontalOptions="End"
+                            Clicked="ButtonServiteurCruel"
+                            FontSize="Medium"
+                            FontAttributes="Bold"
+                            ImageSource="ParoleIcon.png">
+                        <Button.Background>
+                            <LinearGradientBrush EndPoint="1,0">
+                                <GradientStop Color="Wheat" Offset="0.1" />
+                                <GradientStop Color="Salmon" Offset="1.0" />
+                            </LinearGradientBrush>
+                        </Button.Background>
+                    </Button>
+                </StackLayout>
+            </Frame>
+
+        </StackLayout>
+    </ScrollView>
+</ContentPage>
